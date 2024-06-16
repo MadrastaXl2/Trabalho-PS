@@ -37,8 +37,8 @@
         </div>
 
     </header>
-
-
-    
+    <div>
+        <img src="IMGS/ImagemBanner.png" width = "100%"alt="">
+    </div>    
 </body>
 </html>
