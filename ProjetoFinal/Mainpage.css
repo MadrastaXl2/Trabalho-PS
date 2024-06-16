@@ -114,3 +114,102 @@
 
 
 
+#sobreNos{
+    padding: 55px;
+    background-color: #87CEFA;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 50px;
+}
+
+#titleSN{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#lineSN{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px 0 30px;
+}
+
+#txtSN{
+    font-size: 40px;
+    width: 80%;
+    text-align: justify;
+    line-height: 25px
+}
+
+#txtSN h4{
+    margin-top: 40px;
+}
+
+#txtSN strong{
+    color: #099df9;
+}
+
+#titleAvaliacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+    color: #87CEFA;
+}
+
+#lineAvaliacoes{
+    margin: 10px 0 70px;
+    width: 30%;
+    height: 6px;
+    background-color: #87CEFA;
+    border-radius: 50px;
+}
+
+#customerRatings{
+    margin: 0 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#client1{
+    display:flex;
+    justify-content: end;
+    margin: 0 80px;
+}
+
+.geralClient{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 350px; 
+    width: 600px;
+    background-color: #87CEFA;
+    border-radius: 50px;
+}
+
+.txtClient{
+    width:50%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.txtClient p{
+    font-size: 1.3em;
+}
+
+.geralClient img{
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+
+}
