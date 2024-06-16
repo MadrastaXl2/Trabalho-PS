@@ -5,19 +5,21 @@ a{
 #cabecalho{
     background-color: #87CEFA;
     width: 100%;
-    height: 14vh;
+    height: 10vh;
+    padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 #imgLogo{
- width: 100%;
- height: 100%;
+    display: flex;
+    align-items: center;
 }
+
 #textos_do_meio{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    gap: 35px;
     font-size: 23px;
     color: white;
     align-items: center;
@@ -26,18 +28,13 @@ a{
     color: white;
     font-size: 30px;
 }
+
 #ParteFinalCabecalho{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#ParteRedonda{
+    margin-left: 70%;
     background-color: white;
     border-radius: 30px;
     width: 8em;
-    height: 8.5vh;
+    height: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
@@ -159,7 +156,11 @@ a{
 
 
 
-
+#oqFazemos{
+    width: 100%;
+    padding: 55px;
+    margin: 60px;
+}
 
 
 #sobreNos{
