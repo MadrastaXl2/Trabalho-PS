@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +39,7 @@
     </header>
     <div>
         <img src="IMGS/ImagemBanner.png" width = "100%"alt="">
+        
     </div>    
 </body>
 </html>
