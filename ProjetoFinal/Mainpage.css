@@ -5,19 +5,21 @@ a{
 #cabecalho{
     background-color: #87CEFA;
     width: 100%;
-    height: 14vh;
+    height: 10vh;
+    padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 #imgLogo{
- width: 100%;
- height: 100%;
+    display: flex;
+    align-items: center;
 }
+
 #textos_do_meio{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    gap: 35px;
     font-size: 23px;
     color: white;
     align-items: center;
@@ -26,18 +28,13 @@ a{
     color: white;
     font-size: 30px;
 }
+
 #ParteFinalCabecalho{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#ParteRedonda{
+    margin-left: 70%;
     background-color: white;
     border-radius: 30px;
     width: 8em;
-    height: 8.5vh;
+    height: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
@@ -159,6 +156,109 @@ a{
 
 
 
+#oqFazemos{
+    width: 100%;
+    padding: 55px;
+    margin: 60px;
+}
 
 
+#sobreNos{
+    padding: 55px;
+    background-color: #87CEFA;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 50px;
+}
 
+#titleSN{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#lineSN{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px 0 30px;
+}
+
+#txtSN{
+    font-size: 40px;
+    width: 80%;
+    text-align: justify;
+    line-height: 25px
+}
+
+#txtSN h4{
+    margin-top: 40px;
+}
+
+#txtSN strong{
+    color: #099df9;
+}
+
+#titleAvaliacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+    color: #87CEFA;
+}
+
+#lineAvaliacoes{
+    margin: 10px 0 70px;
+    width: 30%;
+    height: 6px;
+    background-color: #87CEFA;
+    border-radius: 50px;
+}
+
+#customerRatings{
+    margin: 0 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#client1{
+    display:flex;
+    justify-content: end;
+    margin: 0 80px;
+}
+
+.geralClient{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 350px; 
+    width: 600px;
+    background-color: #87CEFA;
+    border-radius: 50px;
+}
+
+.txtClient{
+    width:50%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.txtClient p{
+    font-size: 1.3em;
+}
+
+.geralClient img{
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+
+}
