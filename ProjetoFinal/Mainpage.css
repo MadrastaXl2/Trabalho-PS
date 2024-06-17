@@ -159,9 +159,30 @@ a{
 #oqFazemos{
     width: 100%;
     padding: 55px;
-    margin: 60px;
+    margin: 60px 0;
+    background-color: #87CEFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
+
+#lineFaz{
+    width: 50%;
+    height: 5px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px 0 30px;
+}
+
+#conteudoFaz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 40px;
+}
 
 #sobreNos{
     padding: 55px;

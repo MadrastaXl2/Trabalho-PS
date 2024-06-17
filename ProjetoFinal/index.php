@@ -42,6 +42,23 @@
         <img src="IMGS/ImagemBanner.png" width="100%" alt="">
 
     </div>
+
+    <div id="oqFazemos">
+        <div id="titleFaz">
+            <h1>O que Fazemos</h1>
+        </div>
+        <div id="lineFaz"></div>
+        <div id="conteudoFaz">
+            <div id="txtFaz">
+                Na <strong>Remedios Já!!!</strong>, entendemos a importância vital de manter a regularidade no uso de medicamentos para garantir a saúde e o bem-estar. Nossa missão é simplificar e melhorar a vida de nossos clientes, garantindo que nunca percam o horário de seus remédios.
+Com a nossa inovadora tecnologia, oferecemos um serviço que vai além de simples lembretes. Desenvolvemos um sistema completo e intuitivo que ajuda na manutenção de seu cronograma de medicação, proporcionando tranquilidade e segurança para você e seus entes queridos.
+            </div>
+            <img src="IMGS/medicoIcone.png" alt="icone medico">
+        </div>
+    </div>
+
+
+
     <div id="sobreNos">
         <div id="titleSN">
             <h1>Sobre Nós</h1>
@@ -66,13 +83,14 @@
                         melhorou significativamente!“</h4>
                     <p><strong>- Juliana Bianchely</strong></p>
                 </div>
-                <img src="https://assets.propmark.com.br/uploads/2022/02/WhatsApp-Image-2022-02-18-at-08.52.06.jpeg"
+                <img src="https://cdn.pixabay.com/photo/2014/09/03/03/54/beautiful-woman-434015_1280.jpg"
                     alt="foto mulher">
             </div>
             <div class="geralClient">
                 <div class="txtClient">
                     <h4>“Desde que comecei a usar o serviço, não perdi nenhuma dose. A interface é extremamente
-                        amigável, o que torna toda a experiência muito agradável.“</h4>
+                        amigável, o
+                        que torna toda a experiência muito agradável.“</h4>
                     <p><strong>- Peter Parker</strong></p>
                 </div>
                 <img src="https://lojadosherois.com.br/cdn/shop/files/1077732_1685915288095_800x.jpg?v=1685915306"
@@ -80,197 +98,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="oqFazemos">
-    <div id="titleFaz">
-        <h1>O que Fazemos</h1>
-    </div>
-    <div id="lineFaz"></div>
-</div>
-
-
-
-<div id="sobreNos">
-    <div id="titleSN">
-        <h1>Sobre Nós</h1>
-    </div>
-    <div id="lineSN"></div>
-    <div id="txtSN">
-        <h3>Na <strong>Remédios Já!!!</strong>, estamos comprometidos com sua saúde. Sabemos que a aderência ao
-            tratamento é crucial, e estamos aqui para tornar essa tarefa o mais simples e eficiente possível.
-            Junte-se a nós e descubra como podemos transformar sua rotina de medicação em uma experiência mais
-            tranquila e eficaz.</h5>
-    </div>
-</div>
-<div id="avaliacoes">
-    <div id="titleAvaliacoes">
-        <h1>Avaliações dos clientes</h1>
-        <div id="lineAvaliacoes"></div>
-    </div>
-    <div id="customerRatings">
-        <div class="geralClient">
-            <div class="txtClient">
-                <h4>“Estou completamente encantada com o site Remedios Já! Desde que comecei a usar, minha vida
-                    melhorou significativamente!“</h4>
-                <p><strong>- Juliana Bianchely</strong></p>
-            </div>
-            <img src="https://cdn.pixabay.com/photo/2014/09/03/03/54/beautiful-woman-434015_1280.jpg" alt="foto mulher">
-        </div>
-        <div class="geralClient">
-            <div class="txtClient">
-                <h4>“Desde que comecei a usar o serviço, não perdi nenhuma dose. A interface é extremamente amigável, o
-                    que torna toda a experiência muito agradável.“</h4>
-                <p><strong>- Peter Parker</strong></p>
-            </div>
-            <img src="https://lojadosherois.com.br/cdn/shop/files/1077732_1685915288095_800x.jpg?v=1685915306"
-                alt="foto homem">
-        </div>
-    </div>
-</div>
 </body>
 
 </html>
