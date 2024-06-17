@@ -12,32 +12,29 @@
 </head>
 
 <body>
-<header id = "cabecalho">
-        <div id = "imgLogo"> <!--Div da logo-->
-            <div id = "logo">
-                <img src="IMGS/Logo.png" width="30%"  alt="logo">
-                <h10 id = "RemediosJa">Remédios  Já !!!</h10>
-            </div>           
+ <!-- Inicio Cabeçalho-->
+ <header id="cabecalho">
+        <div id="imgLogo"> <!--Div da logo-->
+            <img src="IMGS/Logo.png" width="15%" alt="logo">
+            <h10 id="RemediosJa">Remédios Já</h10>
         </div>
-        <div id = "textos_do_meio"> 
-                <div>| <a href=""> Sobre nós</a></div>
-                <div><a href="">O que fazemos</a></div>
-                <div><a href="">Fale conosco </a> |</div>
+        <div id="textos_do_meio">
+            <a href="">Sobre nós</a>
+            <a href="">O que fazemos</a>
+            <a href="">Fale conosco</a>
         </div>
-        <div id = "ParteFinalCabecalho">
-            <div id = "ParteRedonda">
-                <img id ="tresListras"src="IMGS/menu.png" alt="Tres listras" width="50%">
-                <div class="dropdown">                
-                    <img src="IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">                 
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="">Login</a></li>
-                      <li><a class="dropdown-item" href="PagInsert.php">Cadastro</a></li>
-                      <li><a class="dropdown-item" href="#">Home</a></li>
-                    </ul>
-                  </div>
+        <div id="ParteFinalCabecalho">
+            <img id="tresListras" src="IMGS/menu.png" alt="Tres listras" width="60%">
+            <div class="dropdown">
+                <img src="IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
+                    alt="Usuário">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="LoginHtml.php">Login</a></li>
+                    <li><a class="dropdown-item" href="PagInsert.php">Cadastro</a></li>
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                </ul>
             </div>
         </div>
-
     </header>
     <div id="divGeral">
         <h1 class="text-center">Cadastro Usuario</h1>
