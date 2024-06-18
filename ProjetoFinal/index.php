@@ -33,7 +33,8 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Login</a></li>
                     <li><a class="dropdown-item" href="#">Cadastro</a></li>
-                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="usuInfo.php">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Informações do usuário</a></li>
                 </ul>
             </div>
         </div>
