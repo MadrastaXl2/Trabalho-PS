@@ -37,7 +37,7 @@
     </header>
     <div id="DivGeral">
         <h1 class="text-center">Login</h1>
-        <form action="login.php" method="POST">
+        <form action="Login.php" method="POST">
             <div id="name">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -50,7 +50,7 @@
                 <button type="submit" class="btn btn-primary">Login</button>                
             </div>
         </form>
-        <a href="remedio.php" class="btn btn-primary" id="corbtn">Cadastro Remédio</a>
+        <a href="InsertRemedio.php" class="btn btn-primary" id="corbtn">Cadastro Remédio</a>
     </div>
 </body>
 
