@@ -1,0 +1,61 @@
+#divGeral{
+    margin: 0 auto;
+    width: 70vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.mb-3{
+    display: flex;
+    height: 40px;
+    gap: 15px;
+}
+.mb-4{
+    gap: 15px;
+    width: 70%;
+    display: flex;
+}
+
+#linha2{
+    width: 100%;
+    display: flex;
+}
+
+#exampleFormControlInput2{
+    width: 50%;
+}
+
+.form-control{
+    width: 100%;
+}
+#selectInputs{
+    gap: 15px;
+    display: flex;
+    margin-bottom: 15px;
+}
+#name{
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+#time{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#Date{
+    margin-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+#button{
+    margin-top: 20px;
+}
+header{
+    margin-bottom: 5vh;
+}

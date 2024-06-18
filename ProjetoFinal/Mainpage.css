@@ -54,8 +54,6 @@ a{
     align-items: center;
     color: white;
 }
-
-
 #lineFaz{
     width: 50%;
     height: 5px;
@@ -170,4 +168,21 @@ a{
     height: 100%;
     border-radius: 50px;
 
+}
+/* CSS do insert pq eu sou baiano */
+#divGeral{
+    margin: 40px;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#btnVoltar{
+    
+    width: 7.8em;
+    height: 5vh;
+    background-color: #87CEFA;
+    color: white;
+    border-radius: 10px;
 }
