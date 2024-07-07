@@ -29,7 +29,7 @@
     }
 
     //Query
-    $sql = "SELECT * FROM registro";
+    $sql = "SELECT * FROM remedio";
 
     //Executar query
     $resultado = $conn->query($sql);

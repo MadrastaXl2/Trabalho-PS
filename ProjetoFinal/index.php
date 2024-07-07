@@ -32,8 +32,7 @@
                     alt="Usuário">
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
-                    <li><a class="dropdown-item" href="./Php/PhpInsert.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" href="">Home</a></li>
+                    <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro</a></li>
                     <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
                 </ul>
             </div>

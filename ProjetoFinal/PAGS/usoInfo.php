@@ -29,8 +29,8 @@ $linhas = $stmt->rowCount();
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
-            <a href="index.php">Sobre nós</a>
-            <a href="index.php">O que fazemos</a>
+            <a href="../index.php">Sobre nós</a>
+            <a href="../index.php">O que fazemos</a>
             <a href="">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
