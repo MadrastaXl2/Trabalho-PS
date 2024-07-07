@@ -21,8 +21,8 @@
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
-            <a href="">Sobre nós</a>
-            <a href="">O que fazemos</a>
+            <a href="#sobreNos">Sobre nós</a>
+            <a href="#titleFaz">O que fazemos</a>
             <a href="">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
