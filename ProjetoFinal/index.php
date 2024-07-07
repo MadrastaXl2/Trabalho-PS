@@ -23,7 +23,7 @@
         <div id="textos_do_meio">
             <a href="#sobreNos">Sobre nós</a>
             <a href="#titleFaz">O que fazemos</a>
-            <a href="">Fale conosco</a>
+            <a href="./PAGS/faleConosco.php">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
             <img id="tresListras" src="./IMGS/menu.png" alt="Tres listras" width="60%">
@@ -32,8 +32,7 @@
                     alt="Usuário">
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" href="./Php/PagInsert.php">Cadastro de usuário</a></li>
+                    <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
                     <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
                     <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
                     

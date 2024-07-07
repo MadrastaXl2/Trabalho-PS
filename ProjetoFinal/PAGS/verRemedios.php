@@ -52,8 +52,8 @@
                 <td><?php echo $linha['Nome'] . '<br>'; ?></td>
                 <td><?php echo $linha['Horario'] . '<br>'; ?></td>
                 <td><?php echo $linha['Data'] . '<br>'; ?></td>     
-                <td><a href="updateRemedio.php?id=<?= $linha['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="deleteRemedio.php?id=<?= $linha['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
+                <td><a href="../PHP/phpAlterar.php?id=<?= $linha['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $linha['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
             </tr>
         <?php } ?>
     </tbody>  

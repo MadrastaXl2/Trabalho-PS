@@ -22,9 +22,9 @@
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
-            <a href="">Sobre nós</a>
-            <a href="">O que fazemos</a>
-            <a href="">Fale conosco</a>
+            <a href="../index.php">Sobre nós</a>
+            <a href="../index.php">O que fazemos</a>
+            <a href="faleConosco.php">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
             <img id="tresListras" src="../IMGS/menu.png" alt="Tres listras" width="60%">
