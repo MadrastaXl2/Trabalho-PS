@@ -28,7 +28,7 @@
     }
    
     $id = $_GET['id'];
-    $sql = "DELETE FROM `registro` WHERE `registro`.`id` = $id";
+    $sql = "DELETE FROM `remedio` WHERE `remedio`.`id` = $id";
     try{
         $resultado = $conn -> query($sql);
     }

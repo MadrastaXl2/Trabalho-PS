@@ -44,15 +44,15 @@
         <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
             <div>
                 <label for="Name">Nome do remedio : </label>
-                <input type="name" id="name" name="Nome">
+                <input type="name" id="name" name="nome">
             </div>
             <div>
                 <label for="time">Frequência do remédio (em horas):   </label>
-                <input type="number" id="time" name="Horario">
+                <input type="number" id="time" name="horario">
             </div>             
             <div>
                 <label for="Date">Periodo de medicação:</label>
-                <input type="Date" id="Date" name="Data">
+                <input type="Date" id="Date" name="data">
             </div>
             <button type="submit" name="submit" class="btn btn-success">Atualizar</button>
             <a href="verRemedios.php" class="btn btn-success">Ver meus remédios</a> 

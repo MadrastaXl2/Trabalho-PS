@@ -11,12 +11,12 @@ try {
 $pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
 
 // Preparação da Query(comando)
-$sql = "INSERT INTO usuario VALUES(NULL,:nome,:horario,:data)";
+$sql = "INSERT INTO remedio VALUES(NULL,:nome,:horario,:data)";
 // Pomando para preparar a query
 $stmt = $pdo->prepare($sql);
 // coloca no coringa o valor da variavel
 $stmt->bindParam(':nome',$nome, PDO::PARAM_STR);
-$stmt->bindParam(':email',$horario,PDO::PARAM_STR);
+$stmt->bindParam(':horario',$horario,PDO::PARAM_STR);
 $stmt->bindParam(':data',$data, PDO::PARAM_STR);
 
 

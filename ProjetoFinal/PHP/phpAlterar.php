@@ -29,7 +29,7 @@
     if (isset($_GET['id'])) {
         $id = $conn->real_escape_string($_GET['id']);
         // Criar o comando
-        $sql = "SELECT * FROM `registro` WHERE id = '$id'";
+        $sql = "SELECT * FROM `remedio` WHERE id = '$id'";
         // Executar o comando
         $resultadoSelect = $conn->query($sql);
         if (!$resultadoSelect) {
@@ -44,7 +44,7 @@
         $horario = $conn->real_escape_string($_POST['Horario']);
         $data = $conn->real_escape_string($_POST['Data']);
         // Criar a consulta SQL de atualização
-        $sql = "UPDATE `registro` SET Nome = '$nome', Horario = '$horario', Data = '$data' WHERE id = '$id'";
+        $sql = "UPDATE `remedio` SET nome = '$nome', horario = '$horario', Data = '$data' WHERE id = '$id'";
         // Executar a consulta
         if ($conn->query($sql) === TRUE) {
             $resultado = true;

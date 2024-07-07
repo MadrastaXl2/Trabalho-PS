@@ -30,7 +30,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./LoginHtml.php">Login</a></li>
                     <li><a class="dropdown-item" href="./PagInsert.php">Cadastro</a></li>
-                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="../index.php">Home</a></li>
                 </ul>
             </div>
         </div>
