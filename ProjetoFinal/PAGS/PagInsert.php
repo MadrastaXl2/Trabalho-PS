@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Página de Cadastro</title>  
-    <link rel="stylesheet" href="MainPage.css">
+    <link rel="stylesheet" href="../CSS/MainPage.css">
     <style type="text/css">
     </style>
 </head>
@@ -15,7 +15,7 @@
  <!-- Inicio Cabeçalho-->
  <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
-            <img src="IMGS/Logo.png" width="15%" alt="logo">
+            <img src="../IMGS/Logo.png" width="15%" alt="logo">
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
@@ -26,7 +26,7 @@
         <div id="ParteFinalCabecalho">
             <img id="tresListras" src="IMGS/menu.png" alt="Tres listras" width="60%">
             <div class="dropdown">
-                <img src="IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
+                <img src="../IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
                     alt="Usuário">
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="LoginHtml.php">Login</a></li>
@@ -38,7 +38,7 @@
     </header>
     <div id="divGeral">
         <h1 class="text-center">Cadastro Usuario</h1>
-        <form method="POST" action="PhpInsert.php">
+        <form method="POST" action="../PHP/PhpInsert.php">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nome: </label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="nome">
@@ -71,7 +71,7 @@
                     <input type="submit" name="submit" class="btn btn-success" value = "Cadastrar">
                 </div>               
                 <div id = "btnVoltar">
-                    <a  href="index.php">Voltar</a>
+                    <a  href="../index.php">Voltar</a>
                 </div>                
             </div>
 

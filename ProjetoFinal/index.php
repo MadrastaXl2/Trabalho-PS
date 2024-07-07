@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="mainPage.css">
+        <link rel="stylesheet" href="./CSS/MainPage.css">
     <title>Remédios Já</title>
 </head>
 
@@ -17,7 +17,7 @@
     <!-- Inicio Cabeçalho-->
     <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
-            <img src="IMGS/Logo.png" width="15%" alt="logo">
+            <img src="./IMGS/Logo.png" width="15%" alt="logo">
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
@@ -26,23 +26,22 @@
             <a href="">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
-            <img id="tresListras" src="IMGS/menu.png" alt="Tres listras" width="60%">
+            <img id="tresListras" src="./IMGS/menu.png" alt="Tres listras" width="60%">
             <div class="dropdown">
-                <img src="IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
+                <img src="./IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
                     alt="Usuário">
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Login</a></li>
-                    <li><a class="dropdown-item" href="#">Cadastro</a></li>
-                    <li><a class="dropdown-item" href="usuInfo.php">Home</a></li>
-                    <li><a class="dropdown-item" href="#">Informações do usuário</a></li>
+                    <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
+                    <li><a class="dropdown-item" href="./Php/PhpInsert.php">Cadastro</a></li>
+                    <li><a class="dropdown-item" href="">Home</a></li>
+                    <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <div>
-   
-
-        <img src="IMGS/ImagemBanner.png" width="100%" alt="">
+   <!-- BANNER -->
+        <img src="./IMGS/ImagemBanner.png" width="100%" alt="">
 
     </div>
 
@@ -56,7 +55,7 @@
                 Na <strong>Remedios Já!!!</strong>, entendemos a importância vital de manter a regularidade no uso de medicamentos para garantir a saúde e o bem-estar. Nossa missão é simplificar e melhorar a vida de nossos clientes, garantindo que nunca percam o horário de seus remédios.
 Com a nossa inovadora tecnologia, oferecemos um serviço que vai além de simples lembretes. Desenvolvemos um sistema completo e intuitivo que ajuda na manutenção de seu cronograma de medicação, proporcionando tranquilidade e segurança para você e seus entes queridos.
             </div>
-            <img src="IMGS/medicoIcone.png" alt="icone medico">
+            <img src="./IMGS/medicoIcone.png" alt="icone medico">
         </div>
     </div>
 
