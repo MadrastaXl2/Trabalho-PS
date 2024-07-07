@@ -24,7 +24,7 @@
             <a href="">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
-            <img id="tresListras" src="IMGS/menu.png" alt="Tres listras" width="60%">
+            <img id="tresListras" src="../IMGS/menu.png" alt="Tres listras" width="60%">
             <div class="dropdown">
                 <img src="../IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
                     alt="Usuário">
