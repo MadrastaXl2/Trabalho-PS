@@ -25,33 +25,28 @@
         die("<div class='alert alert-danger' role='alert'>Erro ao conectar: " . $conn->connect_error . "</div>");
     }
 
-    // Verificar se o ID está definido
-    if (isset($_GET['id'])) {
-        $id = $conn->real_escape_string($_GET['id']);
-        // Criar o comando
-        $sql = "SELECT * FROM `remedio` WHERE id = '$id'";
-        // Executar o comando
-        $resultadoSelect = $conn->query($sql);
-        if (!$resultadoSelect) {
-            echo "<div class='alert alert-danger' role='alert'>Erro ao processar</div>";
-        }
-    }
+    $email = $conn->real_escape_string($_POST['email']);
+    $senha = $conn->real_escape_string($_POST['senha1']);
+    $senha2 = $conn->real_escape_string($_POST['senha2']);
 
-    // Verificar se os campos POST não estão vazios
-    if (!empty($_POST['id']) && !empty($_POST['Nome']) && !empty($_POST['Horario']) && !empty($_POST['Data'])) {
-        $id = $conn->real_escape_string($_POST['id']);
-        $nome = $conn->real_escape_string($_POST['Nome']);
-        $horario = $conn->real_escape_string($_POST['Horario']);
-        $data = $conn->real_escape_string($_POST['Data']);
-        // Criar a consulta SQL de atualização
-        $sql = "UPDATE `registro` SET Nome = '$nome', Horario = '$horario', Data = '$data' WHERE id = '$id'";
+       
+       
+        if ($senha == $senha2)
+        {
+            $sql = "UPDATE usuario SET senha = '$senha' where email = '$email'";
         // Executar a consulta
         if ($conn->query($sql) === TRUE) {
             $resultado = true;
         } else {
             echo "<div class='alert alert-danger' role='alert'>Erro ao alterar os dados: " . $conn->error . "</div>";
         }
-    }
+        }
+        else 
+        {
+            echo "As Senhas não são iguais";
+        }
+    
+        
     // Fechar conexão
     $conn->close();
     ?>
@@ -66,7 +61,7 @@
         </div>
     <?php endif ?>
 
-    <a href="verRemedios.php" class="btn btn-primary">Ver dados</a>
+    <a href="../PAGS/LoginHtml.php" class="btn btn-primary">Voltar</a>
 </body>
 
 </html>

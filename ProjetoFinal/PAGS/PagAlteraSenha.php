@@ -39,23 +39,23 @@
         </div>
     </header>
     <div id="divGeral">
-        <h1 class="text-center">Cadastro De Remedios</h1>
-        <form method="POST" action="../PHP/phpAlterar.php">
-        <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
-            <div>
-                <label for="Name">Nome do remedio : </label>
-                <input type="name" id="name" name="nome">
+        <h1 class="text-center">Atualiza senha</h1>
+        <form method="POST" action="../PHP/phpAlteraSenha.php">
+        <div>
+                <label for="Name">Insira o email: </label>
+                <input type="text" id="name" name="email">
             </div>
             <div>
-                <label for="time">Frequência do remédio (em horas):   </label>
-                <input type="number" id="time" name="horario">
+                <label for="Name">Insira a nova senha: </label>
+                <input type="password" id="name" name="senha1">
+            </div>
+            <div>
+                <label for="Name">Repita sua nova senha:   </label>
+                <input type="password" id="name" name="senha2">
             </div>             
-            <div>
-                <label for="Date">Periodo de medicação:</label>
-                <input type="Date" id="Date" name="data">
-            </div>
+            
             <button type="submit" name="submit" class="btn btn-success">Atualizar</button>
-            <a href="verRemedios.php" class="btn btn-success">Ver meus remédios</a> 
+            <a href="../PAGS/LoginHtml.php" class="btn btn-success">Voltar</a> 
         </form>
     </div>
     <div id="buttons" class="text-center">

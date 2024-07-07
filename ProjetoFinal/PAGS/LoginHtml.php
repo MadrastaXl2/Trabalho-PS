@@ -46,7 +46,8 @@
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" name="senha">
-                </div>
+                 </div>
+                 <div><a href="./PagAlteraSenha.php">Alterar Senha</a></div>
                 <button type="submit" class="btn btn-primary">Login</button>                
             </div>
         </form>
