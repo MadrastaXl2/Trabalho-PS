@@ -11,7 +11,7 @@ try {
 $pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
 
 // Preparação da Query(comando)
-$sql = "INSERT INTO usuario VALUES(NULL,:nome,:horario,:data)";
+$sql = "INSERT INTO remedio VALUES(NULL,:nome,:horario,:data)";
 // Pomando para preparar a query
 $stmt = $pdo->prepare($sql);
 // coloca no coringa o valor da variavel
