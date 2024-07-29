@@ -14,7 +14,7 @@ $teste = new DBConnection();
 $teste->getConnection();
 
 // Preparação da Query(comando)
-$sql = "INSERT INTO usuario VALUES(NULL,:nome,:email,:sexo,:idade,:senha)";
+$sql = "INSERT INTO usuario VALUES(NULL,:nome,:email,:senha,:idade,:sexo)";
 // Pomando para preparar a query
 $stmt = $pdo->prepare($sql);
 // coloca no coringa o valor da variavel
