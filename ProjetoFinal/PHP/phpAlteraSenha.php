@@ -10,58 +10,41 @@
 
 <body>
     <?php
-    // Dados de conexão
-    $hostname = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "pit";
-    $resultado = false;
+     require "Classes.php";
 
-    // Conectar
-    $conn = new mysqli($hostname, $username, $password, $database);
+        $email = $conn->real_escape_string($_POST['email']);
+        $senha = $conn->real_escape_string($_POST['senha1']);
+        $senha2 = $conn->real_escape_string($_POST['senha2']);
 
-    // Verificar conexão
-    if ($conn->connect_error) {
-        die("<div class='alert alert-danger' role='alert'>Erro ao conectar: " . $conn->connect_error . "</div>");
-    }
+        $resposta; // criar a variavel resposta por segurança
+        try {
+            
+            $pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
+            
+             if ($senha == $senha2) {
 
-    $email = $conn->real_escape_string($_POST['email']);
-    $senha = $conn->real_escape_string($_POST['senha1']);
-    $senha2 = $conn->real_escape_string($_POST['senha2']);
+                $sql = "UPDATE usuario SET senha = '$senha' where email = '$email'";
+                 // Executar a consulta
+                 $stmt = $pdo->prepare($sql);
 
-       
-       
-        if ($senha == $senha2)
-        {
-            $sql = "UPDATE usuario SET senha = '$senha' where email = '$email'";
-        // Executar a consulta
-        if ($conn->query($sql) === TRUE) {
-            $resultado = true;
-        } else {
-            echo "<div class='alert alert-danger' role='alert'>Erro ao alterar os dados: " . $conn->error . "</div>";
+                // coloca no coringa o valor da variavel
+                $stmt->bindParam(':email',$email, PDO::PARAM_STR);
+                $senha->bindParam(':senha',$senha,PDO::PARAM_STR);
+               
         }
-        }
-        else 
-        {
-            echo "As Senhas não são iguais";
-        }
-    
         
-    // Fechar conexão
-    $conn->close();
+        //PDO::PARAM_STR é para falar q o paramentro e string 
+        
+        //Executar a query
+        $resposta = $stmt->execute();
+        } catch (PDOException $e) {
+            $resposta = $e->getMessage("");
+        }
+        
+        //passa as informações para o index
+        header("Location: ../index.php?resposta=".$resposta);
+
     ?>
-
-    <?php if ($resultado) : ?>
-        <div class="alert alert-success" role="alert">
-            Dado alterado com sucesso!
-        </div>
-    <?php else : ?>
-        <div class="alert alert-danger" role="alert">
-            Erro ao alterar o dado!
-        </div>
-    <?php endif ?>
-
-    <a href="../PAGS/LoginHtml.php" class="btn btn-primary">Voltar</a>
 </body>
 
 </html>
