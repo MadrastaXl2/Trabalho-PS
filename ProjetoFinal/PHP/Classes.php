@@ -1,14 +1,23 @@
-<?php 
+<?php
 
-class SobreMim{
+class DBConnection {
+    private static $conn;
 
-    public int $Id;
+    public static function getConnection() {
+        if (self::$conn === null) {
+            try {
+                $dsn = "pgsql:host=localhost;port=5432;dbname=pit";
+                $username = "root";
+                $password = "";
 
-    public function PegaId($idzin){
-        
+                self::$conn = new PDO($dsn, $username, $password);
+                self::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (PDOException $e) {
+                echo "Connection failed: " . $e->getMessage();
+            }
+        }
+        return self::$conn;
     }
-
 }
-
 
 ?>

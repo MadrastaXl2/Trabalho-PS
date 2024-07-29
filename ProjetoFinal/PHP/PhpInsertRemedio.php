@@ -1,5 +1,5 @@
 <?php
-
+require "Classes.php";
 $nome = trim($_POST['nome']); // o trim tira os espaços antes e depois da string
 $horario = trim($_POST['horario']); 
 $data = trim($_POST['data']);
@@ -8,7 +8,9 @@ $resposta; // criar a variavel resposta por segurança
 try {
     // abrir conexão
 
-$pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
+// $pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
+$teste = new DBConnection();
+$teste->getConnection();
 
 // Preparação da Query(comando)
 $sql = "INSERT INTO remedio VALUES(NULL,:nome,:horario,:data)";
@@ -29,6 +31,6 @@ $resposta = $stmt->execute();
 }
 
 //passa as informações para o index
-header("Location: index.php?resposta=".$resposta);
+header("Location: ../index.php?resposta=".$resposta);
 
 ?>
