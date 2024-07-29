@@ -9,11 +9,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./CSS/MainPage.css">
+        <link rel="stylesheet" href="./CSS/Mainpage.css">
     <title>Remédios Já</title>
-</head>
 
+    <style>
+        .darkmode{
+            background-color: #181414;
+            color: white;
+        }
+        .darkmode #cabecalho{
+            background-color: #00288b;
+            color: white;
+        }
+        .darkmode #oqFazemos{
+            background-color: #00288b;
+            color: white;
+        }
+        .darkmode #sobreNos{
+            background-color: #00288b;
+            color: white;
+        }
+        .darkmode .geralClient{
+            background-color: #00288b;
+            color: white;
+        }
+    </style>
+</head>
+<script>
+        function myFunction() {
+        var body = document.body;
+        body.classList.toggle("darkmode");
+        }
+    </script>
 <body>
+<img onclick="myFunction()" id="" src="IMGS/darkModeIcon.png" alt="darkmode" width="10%">
     <!-- Inicio Cabeçalho-->
     <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
@@ -24,6 +53,9 @@
             <a href="#sobreNos">Sobre nós</a>
             <a href="#titleFaz">O que fazemos</a>
             <a href="./PAGS/faleConosco.php">Fale conosco</a>
+        </div>
+        <div>
+
         </div>
         <div id="ParteFinalCabecalho">
             <img id="tresListras" src="./IMGS/menu.png" alt="Tres listras" width="60%">
