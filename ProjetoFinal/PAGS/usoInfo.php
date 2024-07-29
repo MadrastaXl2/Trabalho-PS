@@ -1,6 +1,6 @@
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=pit', 'root', '');
-$sql = "SELECT * FROM usuario where id = 14";
+$sql = "SELECT * FROM usuario where id = 1";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $resultado = $stmt->fetchAll(PDO::FETCH_ASSOC);

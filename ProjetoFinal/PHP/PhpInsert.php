@@ -12,7 +12,7 @@ try {
 $pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
 
 // Preparação da Query(comando)
-$sql = "INSERT INTO usuario VALUES(NULL,:nome,:email,:sexo,:idade,:senha)";
+$sql = "INSERT INTO usuario VALUES(NULL,:nome,:email,:senha,:idade,:sexo)";
 // Pomando para preparar a query
 $stmt = $pdo->prepare($sql);
 // coloca no coringa o valor da variavel
@@ -31,6 +31,6 @@ $resposta = $stmt->execute();
 }
 
 //passa as informações para o index
-header("Location: index.php?resposta=".$resposta);
+header("Location: ../index.php?resposta=".$resposta);
 
 ?>

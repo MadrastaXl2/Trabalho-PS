@@ -29,6 +29,6 @@ $resposta = $stmt->execute();
 }
 
 //passa as informações para o index
-header("Location: index.php?resposta=".$resposta);
+header("Location: ../index.php?resposta=".$resposta);
 
 ?>
