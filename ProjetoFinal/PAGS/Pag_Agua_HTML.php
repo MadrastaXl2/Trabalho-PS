@@ -66,10 +66,12 @@
                 <img src="../IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
                     alt="Usuário">
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
+                    <li><a class="dropdown-item" href="LoginHtml.php">Login</a></li>
+                    <li><a class="dropdown-item" href="PagInsert.php">Cadastro de usuário</a></li>
+                    <li><a class="dropdown-item" href="InsertRemedio.php">Cadastro de Remédio</a></li>
+                    <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
+                    <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
+
                     
                 </ul>
             </div>
