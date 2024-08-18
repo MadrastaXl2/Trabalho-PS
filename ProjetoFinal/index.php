@@ -42,11 +42,10 @@
         }
     </script>
 <body>
-<img onclick="myFunction()" id="" src="IMGS/darkModeIcon.png" alt="darkmode" width="10%">
     <!-- Inicio Cabeçalho-->
     <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
-            <img src="./IMGS/Logo.png" width="15%" alt="logo">
+            <img onclick="myFunction()" src="./IMGS/Logo.png" width="15%" alt="logo">
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
