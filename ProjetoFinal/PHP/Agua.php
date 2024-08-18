@@ -33,4 +33,18 @@ class Agua{
     }
 
 }
+
+$Litros_Tomados = $_POST['agua'];
+
+
+$BAH = intval($Litros_Tomados);
+
+$teste = new Agua();
+
+$teste->BebeAgua($BAH);
+
+echo $teste->BebeAgua($BAH);
+
+
 ?>
+<a href="../PAGS/Pag_Agua_HTML.php"></a>
