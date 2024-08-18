@@ -10,6 +10,7 @@ a{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 #imgLogo{
@@ -155,6 +156,7 @@ a{
 .txtClient{
     width:50%;
     padding: 30px;
+    padding-bottom: 0;
     text-align: center;
     color: white;
 }
