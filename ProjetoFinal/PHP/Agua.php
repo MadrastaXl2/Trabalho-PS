@@ -49,7 +49,7 @@ class Agua{
         {
             $Falta = 2.1 - $Litros;
 
-            return "Ainda faltam {$Falta} de agua para a quantidade ideal do dia !!!!";
+            return "Ainda faltam {$Falta} Litros de agua para a quantidade ideal do dia !!!!";
         }
         else 
         {
@@ -64,7 +64,7 @@ class Agua{
         {
             $Falta = $quantidade - $litros;
 
-            return "Ainda faltam {$Falta} de agua para a quantidade ideal do dia !!!!";
+            return "Ainda faltam {$Falta} Litros de agua para a quantidade ideal do dia !!!!";
         }
         else 
         {
@@ -78,7 +78,7 @@ class Agua{
 $Litros_Tomados = $_POST['agua'];
 
 
-$BAH = intval($Litros_Tomados);
+$BAH = doubleval($Litros_Tomados);
 
 $teste = new Agua();
 

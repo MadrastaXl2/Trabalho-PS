@@ -82,7 +82,7 @@
 
          <div id = "coisa_redonda_meio">
 
-                        <div id = "agua">Quanto falta de agua</div>
+                        <div id = "agua">Quanto falta de água</div>
             <form action="../PHP/Agua.php" method="POST">
 
 
