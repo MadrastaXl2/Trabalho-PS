@@ -67,6 +67,7 @@
                     <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
                     <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
                     <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
+                    <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Águas</a></li>
 
                     
                 </ul>

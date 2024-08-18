@@ -10,7 +10,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../CSS/MainPage.css">
-        <link rel="stylesheet" href="../CSS/AGUAS.css">
+        <link rel="stylesheet" href="../CSS/AGUA.css">
     <title>Remédios Já</title>
 <? 
     require "./PHP/Class_agua.php";
@@ -49,7 +49,7 @@
     <!-- Inicio Cabeçalho-->
     <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
-            <img src="./IMGS/Logo.png" width="15%" alt="logo">
+            <img onclick="myFunction()" src="../IMGS/Logo.png" width="15%" alt="logo">
             <h10 id="RemediosJa">Remédios Já</h10>
         </div>
         <div id="textos_do_meio">
@@ -61,9 +61,9 @@
 
         </div>
         <div id="ParteFinalCabecalho">
-            <img id="tresListras" src="./IMGS/menu.png" alt="Tres listras" width="60%">
+            <img id="tresListras" src="../IMGS/menu.png" alt="Tres listras" width="60%">
             <div class="dropdown">
-                <img src="./IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
+                <img src="../IMGS/Usuario.png" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="60%"
                     alt="Usuário">
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
@@ -74,7 +74,6 @@
                 </ul>
             </div>
         </div>
-        <img onclick="myFunction()" id="" src="IMGS/darkModeIcon.png" alt="darkmode" width="10%">
     </header>
 
         <div id = "separador"></div>
@@ -82,13 +81,13 @@
          <div id = "coisa_redonda_meio">
 
                         <div id = "agua">Quanto falta de agua</div>
-            <form action="../PHP/Class_agua.php" method="POST">
+            <form action="../PHP/Agua.php" method="POST">
 
 
             <label for="">Litros tomados : </label>
                 <input type="text" name = "agua">
 
-                    <input type="submit" valeu = "Calcular">
+                    <input type="submit" value = "Calcular">
 
             </form>
 
