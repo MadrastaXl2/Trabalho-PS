@@ -54,9 +54,9 @@
             <h10 id="RemediosJa">MediFy</h10>
         </div>
         <div id="textos_do_meio">
-            <a href="#sobreNos">Sobre nós</a>
-            <a href="#titleFaz">O que fazemos</a>
-            <a href="./PAGS/faleConosco.php">Fale conosco</a>
+            <a href="../index.php">Sobre nós</a>
+            <a href="../index.php">O que fazemos</a>
+            <a href="faleConosco.php">Fale conosco</a>
         </div>
         <div>
 
@@ -72,6 +72,8 @@
                     <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
                     <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
                     <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+
                 </ul>
             </div>
         </div>

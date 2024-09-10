@@ -37,6 +37,8 @@
                     <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
                     <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
                     <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+
                 </ul>
             </div>
         </div>

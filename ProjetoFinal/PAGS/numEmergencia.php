@@ -19,7 +19,7 @@
         <div id="textos_do_meio">
             <a href="../index.php">Sobre nós</a>
             <a href="../index.php">O que fazemos</a>
-            <a href="">Fale conosco</a>
+            <a href="faleConosco.php">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
         <img src="../IMGS/Usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
@@ -32,6 +32,8 @@
                     <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
                     <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
                     <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+
                 </ul>
             </div>
         </div>

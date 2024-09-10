@@ -20,6 +20,11 @@ $linhas = $stmt->rowCount();
     <link rel="stylesheet" href="../Mainpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MedFy</title>
+    <style>
+        footer{
+            margin-top: 50vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,10 +37,10 @@ $linhas = $stmt->rowCount();
         <div id="textos_do_meio">
             <a href="../index.php">Sobre nós</a>
             <a href="../index.php">O que fazemos</a>
-            <a href="faleConosco.php">Fale conosco</a>
+            <a href="">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
-        <img src="./IMGS/Usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
+        <img src="../IMGS/Usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
             <div class="dropdown">
                 <!-- Corrigido o botão do dropdown -->                
                 <ul class="dropdown-menu">
@@ -45,9 +50,10 @@ $linhas = $stmt->rowCount();
                     <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
                     <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
                     <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+
                 </ul>
             </div>
-        </div>
         </div>
     </header>
     <table class="table table-striped table-bordered">

@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../MainPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title></title>
+    <title>MedFy</title>
 </head>
 <body>
 <header id="cabecalho">
@@ -20,7 +20,7 @@
         <div id="textos_do_meio">
             <a href="../index.php">Sobre nós</a>
             <a href="../index.php">O que fazemos</a>
-            <a href="">Fale conosco</a>
+            <a href="faleConosco.php">Fale conosco</a>
         </div>
         <div id="ParteFinalCabecalho">
         <img src="../IMGS/Usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
@@ -33,9 +33,16 @@
                     <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
                     <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
                     <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+
                 </ul>
             </div>
         </div>
+        <style>
+            footer{
+                margin-top: 50vh;
+            }
+        </style>
     </header>
     <div id="geral">
         <h1 class="text-center">Calculadora Calorias</h1>
