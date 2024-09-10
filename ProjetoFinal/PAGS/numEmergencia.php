@@ -8,13 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../MainPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title></title>
+    <title>MedFy</title>
 </head>
 <body>
 <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
             <img src="../IMGS/Logo.png" width="15%" alt="logo">
-            <h10 id="RemediosJa">Remédios Já</h10>
+            <h10 id="RemediosJa">MedFy</h10>
         </div>
         <div id="textos_do_meio">
             <a href="../index.php">Sobre nós</a>
@@ -59,4 +59,70 @@
             <h2>POLÍCIA - <strong>190</strong></h2>
         </div>
     </div>
+    <footer>
+        <div id="conteudo_footer">
+            <div id="contatos_footer">
+                <h1>MedFy</h1>
+                <p>Sua Saúde, Nossa Prioridade</p>
+
+                <div id="redes_sociais_footer">
+                    <a href="https://www.instagram.com/pedridao/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="https://web.whatsapp.com" class="footer-link" id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+                <ul class="lista_footer">
+                    <li>
+                        <h3>Emergência</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Números de Emergência</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Localização de Hospitais Próximos</a>
+                    </li>
+                    
+                </ul>
+
+                <ul class="lista_footer">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Beba Água</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Quantas Calorias Você Já perdeu?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Já tomou seus remédios?</a>
+                    </li>
+                </ul>
+            <div id="footer_subscribe">
+                <h3>Se Inscreva</h3>
+
+                <p>
+                    Escreva seu e-mail para ser notificado de novas funcionalidades
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email"> 
+                    <button><i class="fa-solid fa-square-envelope"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer_copyright">
+            &#169 2024 all rights reserved MedFy
+        </div>
+    </footer>
 </body>

@@ -48,7 +48,7 @@
     <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
             <img onclick="myFunction()" src="./IMGS/Logo.png" width="15%" alt="logo">
-            <h2 id="RemediosJa">MediFy</h2>
+            <h2 id="RemediosJa">MedFy</h2>
         </div>
         <div id="textos_do_meio">
             <a href="#sobreNos">Sobre nós</a>

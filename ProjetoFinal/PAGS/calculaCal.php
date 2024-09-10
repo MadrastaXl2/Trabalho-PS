@@ -15,7 +15,7 @@
 <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
             <img src="../IMGS/Logo.png" width="15%" alt="logo">
-            <h10 id="RemediosJa">Remédios Já</h10>
+            <h10 id="RemediosJa">MedFy</h10>
         </div>
         <div id="textos_do_meio">
             <a href="../index.php">Sobre nós</a>
@@ -27,12 +27,12 @@
             <div class="dropdown">
                 <!-- Corrigido o botão do dropdown -->                
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="LoginHtml.php">Login</a></li>
+                    <li><a class="dropdown-item" href="PagInsert.php">Cadastro de usuário</a></li>
+                    <li><a class="dropdown-item" href="InsertRemedio.php">Cadastro de Remédio</a></li>
+                    <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
+                    <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
+                    <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
                 </ul>
             </div>
         </div>
@@ -122,9 +122,7 @@
                     <li>
                         <a href="#" class="footer-link">Localização de Hospitais Próximos</a>
                     </li>
-                    <!--<li>
-                        <a href="#" class="footer-link">Penis</a>
-                    </li>-->
+                    
                 </ul>
 
                 <ul class="lista_footer">

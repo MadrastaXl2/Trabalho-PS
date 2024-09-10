@@ -11,7 +11,7 @@
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../MainPage.css">
         <link rel="stylesheet" href="../CSS/AGUA.css">
-    <title>Remédios Já</title>
+    <title>MedFy</title>
 <? 
     require "./PHP/Class_agua.php";
 ?>

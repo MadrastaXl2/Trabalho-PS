@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Mainpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Remédios Já</title>
+    <title>Medify</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
             <img src="../IMGS/Logo.png" width="15%" alt="logo">
-            <h10 id="RemediosJa">Remédios Já</h10>
+            <h10 id="RemediosJa">MediFy</h10>
         </div>
         <div id="textos_do_meio">
             <a href="../index.php">Sobre nós</a>
@@ -29,12 +29,12 @@
             <div class="dropdown">
                 <!-- Corrigido o botão do dropdown -->                
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
-                    <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
+                    <li><a class="dropdown-item" href="LoginHtml.php">Login</a></li>
+                    <li><a class="dropdown-item" href="PagInsert.php">Cadastro de usuário</a></li>
+                    <li><a class="dropdown-item" href="InsertRemedio.php">Cadastro de Remédio</a></li>
+                    <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
+                    <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
+                    <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
                 </ul>
             </div>
         </div>
@@ -89,9 +89,7 @@
                     <li>
                         <a href="#" class="footer-link">Localização de Hospitais Próximos</a>
                     </li>
-                    <!--<li>
-                        <a href="#" class="footer-link">Penis</a>
-                    </li>-->
+                    
                 </ul>
 
                 <ul class="lista_footer">
