@@ -1,60 +1,73 @@
 <?php
 
+require_once 'UsuarioDAO.php';
+require_once 'Conexao.class.php';
+require_once 'Usuario.php';
 
-class MenagerUsuario extends Conexao{
+class UsuarioDAOimpl implements UsuarioDao {
+    private $conn;
 
-     public function Insert_Usuario($data){
-        $pdo = parent::get_instance();
-        $sql = "insert into usuario values (null, :nome, :email, :senha, :idade, :sexo)";
-        $statement = $pdo->prepare($sql);
-        foreach ($data as $key => $value){
-            $statement->bindValue(":$key",$value);
+    public function __construct() {
+        $this->conn = conexao::get_instance();
+    }
+
+    public function getTodosUsuarios() {
+        $Usuario = array();
+        try {
+            $statement = $this->conn->query("SELECT * FROM Usuario");
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+                $Usuario = new Usuario();
+                $Usuario->setId($row['id']);
+                $Usuario->setnome($row['name']);
+                $Usuario->setEmail($row['email']);
+                $Usuario->setSenha($row['senha']);
+                $Usuario->setIdade($row['idade']);
+                $Usuario->setSexo($row['sexo']);
+                $Usuarios[] = $Usuario;
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
         }
-        $statement->execute();
+        return $Usuarios;
     }
 
-    public function List_Usuario(){
-        $pdo = parent::get_instance();
-        $sql = "select * from usuario order by id desc";
-        $statement = $pdo->query($sql);
-        return $statement->fetchAll();
-    }
-
-    public function list_Usuario_por_id($id){
-        $pdo = parent::get_instance();
-        $sql = "select * from usuario where id = :id";
-        $statement = $pdo->prepare($sql);
-        $statement->bindValue(":id", $id);
-        $statement->execute();
-        return $statement->fetchAll();
-    }
-
-    public function delete_Usuario($id){
-        $pdo = parent::get_instance();
-        $sql = "delete from usuario where id = :id";
-        $statement = $pdo->prepare($sql);
-        $statement->bindValue(":id", $id);
-        $statement->execute();
-    }
-
-    public function update_Usuario($data)
-    {
-        $pdo = parent::get_instance();
-        $sql = "update usuario
-                    set nome = :nome,
-                        email = :email,
-                            senha = :senha,                               
-                                idade = :idade, 
-                                    sexo = :sexo                               
-                                            where id = :id";
-        var_dump($sql);
-        $statement = $pdo->prepare($sql);
-        foreach ($data as $key => $value){
-            $statement->bindValue(":$key", $value);
+    public function getUmUsuario($id) {
+        $Usuario = new Usuario();
+        try {
+            $statement = $this->conn->prepare("SELECT * FROM usuario WHERE id=?");
+            $statement->execute([$id]);
+            $row = $statement->fetch(PDO::FETCH_ASSOC);
+            if ($row) {
+                $Usuario->setId($row['id']);
+                $Usuario->setnome($row['name']);
+                $Usuario->setEmail($row['email']);
+                $Usuario->setSenha($row['senha']);
+                $Usuario->setIdade($row['idade']);
+                $Usuario->setSexo($row['sexo']);
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
         }
-        $statement->execute();
+        return $Usuario;
+    }
+
+    public function updateUsuario($Usuario) {
+        try {
+            $statement = $this->conn->prepare("UPDATE usuario SET nome=?, email=?,senha=?,idade=?,sexo =? WHERE id=?");
+            $statement->execute([$Usuario->getNome(), $Usuario->getEmail(),$Usuario->getSenha(),$Usuario->getIdade(),$Usuario->getId()]);
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    }
+
+    public function deleteUsuario($Usuario) {
+        try {
+            $statement = $this->conn->prepare("DELETE FROM usuario WHERE id=?");
+            $statement->execute([$Usuario->getId()]);
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
     }
 }
-
 
 ?>
