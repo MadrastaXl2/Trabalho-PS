@@ -4,7 +4,7 @@ require_once 'RemedioDAO.php';
 require_once 'Conexao.class.php';
 require_once 'Remedio.php';
 
-class RemedioDAOimpl implements RemedioDao {
+class RemediosDAOImple implements RemedioDao {
     private $conn;
 
     public function __construct() {
@@ -17,11 +17,12 @@ class RemedioDAOimpl implements RemedioDao {
             $statement = $this->conn->query("SELECT * FROM remedio");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Remedio = new Remedio();
-                $Remedio->setId($row['id']);
-                $Remedio->setNome($row['nome']);
-                $Remedio->setHorario($row['horario']);
-                $Remedio->setData($row['data']);
+                $Remedio->getId($row('id'));
+                $Remedio->getNome($row('nome'));
+                $Remedio->getHorario($row('horario'));
+                $Remedio->getData($row('data'));
                 $Remedios[] = $Remedio;
+              
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
@@ -29,17 +30,17 @@ class RemedioDAOimpl implements RemedioDao {
         return $Remedios;
     }
 
-    public function getUmUsuario($id) {
-        $Usuario = new Usuario();
+    public function getUmRemedio($id) {
+        $Remedio = new Remedio();
         try {
             $statement = $this->conn->prepare("SELECT * FROM remedio WHERE id=?");
             $statement->execute([$id]);
             $row = $statement->fetch(PDO::FETCH_ASSOC);
             if ($row) {
-                $Remedio->setId($row['id']);
-                $Remedio->setNome($row['nome']);
-                $Remedio->setHorario($row['horario']);
-                $Remedio->setData($row['data']);
+                $Remedio->getId($row['id']);
+                $Remedio->getNome($row['nome']);
+                $Remedio->getHorario($row['horario']);
+                $Remedio->getData($row['data']);
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
@@ -56,7 +57,7 @@ class RemedioDAOimpl implements RemedioDao {
         }
     }
 
-    public function deleteUsuario($Remedio) {
+    public function deleteRemedio($Remedio) {
         try {
             $statement = $this->conn->prepare("DELETE FROM remedio WHERE id=?");
             $statement->execute([$Remedio->getId()]);
@@ -64,7 +65,6 @@ class RemedioDAOimpl implements RemedioDao {
             echo "Error: " . $e->getMessage();
         }
     }
-}
 
 }
 

@@ -8,11 +8,11 @@ class Remedio{
     private $Data;
 
     public function getId(){
-        return $this -> id;
+        return $this -> Id;
     }
 
     public function getNome(){
-        return $this -> nome;
+        return $this -> Nome;
     }
 
     public function getHorario(){

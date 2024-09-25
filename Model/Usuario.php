@@ -4,33 +4,33 @@ class Usuario{
 
     private $Id;
     private $Nome;
-    private $email;
-    private $senha;
-    private $idade;
+    private $Email;
+    private $Senha;
+    private $Idade;
     private $Sexo;
 
     public function getId(){
-        return $this -> id;
+        return $this ->Id;
     }
 
     public function getNome(){
-        return $this -> nome;
+        return $this ->Nome;
     }
 
     public function getEmail(){
-        return $this -> sexo;
+        return $this -> Email;
     }
 
     public function getSenha(){
-        return $this -> sexo;
+        return $this -> Senha;
     }
 
     public function getIdade(){
-        return $this -> sexo;
+        return $this -> Idade;
     }
 
     public function getSexo(){
-        return $this -> sexo;
+        return $this -> Sexo;
     }
 
 }
