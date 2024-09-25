@@ -18,7 +18,7 @@ class UsuarioDAOimpl implements UsuarioDao {
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Usuario = new Usuario();
                 $Usuario->setId($row['id']);
-                $Usuario->setnome($row['name']);
+                $Usuario->setnome($row['nome']);
                 $Usuario->setEmail($row['email']);
                 $Usuario->setSenha($row['senha']);
                 $Usuario->setIdade($row['idade']);
