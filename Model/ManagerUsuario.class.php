@@ -46,7 +46,7 @@ class MenagerUsuario extends Conexao{
                             senha = :senha,                               
                                 idade = :idade, 
                                     sexo = :sexo                               
-                                where id = :id";
+                                            where id = :id";
         var_dump($sql);
         $statement = $pdo->prepare($sql);
         foreach ($data as $key => $value){
