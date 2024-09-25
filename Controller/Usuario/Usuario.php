@@ -4,8 +4,10 @@ class Usuario{
 
     private $Id;
     private $Nome;
+    private $email;
+    private $senha;
+    private $idade;
     private $Sexo;
-    private $Historico_medico;
 
     public function getId(){
         return $this -> id;
@@ -15,13 +17,22 @@ class Usuario{
         return $this -> nome;
     }
 
+    public function getEmail(){
+        return $this -> sexo;
+    }
+
+    public function getSenha(){
+        return $this -> sexo;
+    }
+
+    public function getIdade(){
+        return $this -> sexo;
+    }
+
     public function getSexo(){
         return $this -> sexo;
     }
 
-    public function getHistorico_medico(){
-        return $this -> Historico_medico;
-    }
 }
 
 

@@ -1,47 +1,51 @@
 <?php
 
-class Manager extends Conexao{
-    public function insert_paciente($data)
-    {
+
+class MenagerUsuario extends Conexao{
+
+     public function Insert_Usuario($data){
         $pdo = parent::get_instance();
-        $sql = "insert into paciente values (null, :nome, :sexo, :historico_medico)";
+        $sql = "insert into usuario values (null, :nome, :email, :senha, :idade, :sexo)";
         $statement = $pdo->prepare($sql);
         foreach ($data as $key => $value){
             $statement->bindValue(":$key",$value);
         }
         $statement->execute();
     }
-    public function list_paciente()
-    {
+
+    public function List_Usuario(){
         $pdo = parent::get_instance();
-        $sql = "select * from paciente order by id desc";
+        $sql = "select * from usuario order by id desc";
         $statement = $pdo->query($sql);
         return $statement->fetchAll();
     }
-    public function list_paciente_by_id($id)
-    {
+
+    public function list_Usuario_por_id($id){
         $pdo = parent::get_instance();
-        $sql = "select * from paciente where id = :id";
+        $sql = "select * from usuario where id = :id";
         $statement = $pdo->prepare($sql);
         $statement->bindValue(":id", $id);
         $statement->execute();
         return $statement->fetchAll();
     }
-    public function delete_paciente($id)
-    {
+
+    public function delete_Usuario($id){
         $pdo = parent::get_instance();
-        $sql = "delete from paciente where id = :id";
+        $sql = "delete from usuario where id = :id";
         $statement = $pdo->prepare($sql);
         $statement->bindValue(":id", $id);
         $statement->execute();
     }
-    public function update_paciente($data)
+
+    public function update_Usuario($data)
     {
         $pdo = parent::get_instance();
-        $sql = "update paciente
+        $sql = "update usuario
                     set nome = :nome,
-                        sexo = :sexo,
-                            historico_medico = :historico_medico
+                        email = :email,
+                            senha = :senha,                               
+                                idade = :idade, 
+                                    sexo = :sexo                               
                                 where id = :id";
         var_dump($sql);
         $statement = $pdo->prepare($sql);
@@ -50,7 +54,7 @@ class Manager extends Conexao{
         }
         $statement->execute();
     }
-    
 }
+
 
 ?>
