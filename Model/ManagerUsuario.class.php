@@ -11,10 +11,20 @@ class UsuarioDAOimpl implements UsuarioDao {
         $this->conn = conexao::get_instance();
     }
 
+    public function insertUsuario($Usuario){
+        try {
+            $statement = $this->conn->prepare("INSERT INTO usuario VALUES null, :nome, :email, :senha, :idade,:sexo");
+            $statement->execute([':nome' => $Usuario->getNome(),':email' => $Usuario->getEmail(),':senha' => $Usuario->getSenha(),':idade' => $Usuario->getIdade(),':sexo' => $Usuario->getSexo()]);
+        }
+        catch(PDOException $e){
+            echo "Error: " . $e->getMessage();
+    }
+    }
+
     public function getTodosUsuarios() {
         $Usuario = array();
         try {
-            $statement = $this->conn->query("SELECT * FROM Usuario");
+            $statement = $this->conn->query("SELECT * FROM usuario");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Usuario = new Usuario();
                 $Usuario->getId($row['id']);

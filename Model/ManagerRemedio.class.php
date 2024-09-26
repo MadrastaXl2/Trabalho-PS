@@ -11,6 +11,16 @@ class RemediosDAOImple implements RemedioDao {
         $this->conn = conexao::get_instance();
     }
 
+    public function insertRemedios($Remedio){
+        try {
+            $statement = $this->conn->prepare("INSERT INTO usuario VALUES null, :nome, :horario, :data");
+            $statement->execute([':nome' => $Remedio->getNome(),':horario' => $Remedio->getHorario(),':data' => $Remedio->getData()]);
+        }
+        catch(PDOException $e){
+            echo "Error: " . $e->getMessage();
+    }
+    }
+
     public function getTodosRemedios() {
         $Remedio = array();
         try {

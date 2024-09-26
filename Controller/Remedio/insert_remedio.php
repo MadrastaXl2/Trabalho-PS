@@ -7,7 +7,7 @@ $RemediosDAOImple = new RemediosDAOImple();
 
 
 if (!empty($_POST)) {
-    $RemediosDAOImple->getTodosRemedios($_POST);
+    $RemediosDAOImple->insertRemedios($_POST);
     header("Location: .../view/InsereRemedio.php?cod=1");
 }
 
