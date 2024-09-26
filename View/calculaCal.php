@@ -1,3 +1,7 @@
+<?php
+include '../Model/ManagerCalculaCal.class.php';
+include '../Model/Conexao.class.php'
+?>
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -70,32 +74,16 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (!empty($_POST['peso']) && !empty($_POST['atividade']) && !empty($_POST['duracao'])) {
             
-            $peso = $_POST['peso'];
-            $atividade = $_POST['atividade'];
-            $duracao = $_POST['duracao'];
-    
-            $calorias = calcularCalorias($peso, $atividade, $duracao);
-            echo "<h2>Você queimou aproximadamente " . round($calorias, 2) . " calorias.</h2>";
+            $CalculoCalorias = new calculaCalorias();   
+            echo "O total de calorias gastos foi: "; 
+            echo $CalculoCalorias -> calculaCal( $_POST['peso'], $_POST['atividade'], $_POST['duracao']);
+            
         } else {
             echo "<h2>Todos os campos precisam estar preenchidos</h2>";
         }
 
     }
-        function calcularCalorias($peso, $atividade, $duracao){
-
-            $metTabela = [
-                'corrida' => 9.8,
-                'caminhada' => 3.8,
-                'ciclismo' => 7.5,
-                'natação' => 8.0,
-                'musculação' => 6.0,
-            ];
-            $met = $metTabela[$atividade];
-            $caloriasQueimadas = ($met * $peso * $duracao)/60;
-
-
-            return $caloriasQueimadas;
-        }
+        
         
     ?>
     <footer>

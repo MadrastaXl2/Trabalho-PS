@@ -38,7 +38,6 @@
                     <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
                     <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
                     <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
-
                 </ul>
             </div>
         </div>
@@ -67,12 +66,10 @@
                 <label for="exampleFormControlInput1" class="form-label">Idade: </label>
                 <input type="number" class="form-control" id="exampleFormControlInput1" name="idade">
             </div>
-
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Senha: </label>
                 <input type="password" class="form-control" id="exampleFormControlInput1" name="senha">
             </div>
-
             <div id="buttons" class="text-center">
                 <div>
                     <input type="submit" name="submit" class="btn btn-success" value="Cadastrar">
@@ -88,22 +85,18 @@
             <div id="contatos_footer">
                 <h1>MedFy</h1>
                 <p>Sua Saúde, Nossa Prioridade</p>
-
                 <div id="redes_sociais_footer">
                     <a href="https://www.instagram.com/pedridao/" class="footer-link" id="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-
                     <a href="#" class="footer-link" id="Twitter">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-
                     <a href="https://web.whatsapp.com" class="footer-link" id="Whatsapp">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-
                 <ul class="lista_footer">
                     <li>
                         <h3>Emergência</h3>
@@ -113,10 +106,8 @@
                     </li>
                     <li>
                         <a href="#" class="footer-link">Localização de Hospitais Próximos</a>
-                    </li>
-                    
+                    </li>           
                 </ul>
-
                 <ul class="lista_footer">
                     <li>
                         <h3>Blog</h3>
@@ -133,17 +124,14 @@
                 </ul>
             <div id="footer_subscribe">
                 <h3>Se Inscreva</h3>
-
                 <p>
                     Escreva seu e-mail para ser notificado de novas funcionalidades
                 </p>
-
                 <div id="input_group">
                     <input type="email" id="email"> 
                     <button><i class="fa-solid fa-square-envelope"></i></button>
                 </div>
             </div>
-
         </div>
         <div id="footer_copyright">
             &#169 2024 all rights reserved MedFy
