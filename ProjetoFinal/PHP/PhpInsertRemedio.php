@@ -9,8 +9,8 @@ try {
     // abrir conexão
 
 // $pdo = new PDO('mysql:host=localhost;dbname=pit','root','');
-$teste = new DBConnection();
-$teste->getConnection();
+//$teste = new DBConnection();
+//$teste->getConnection();
 
 // Preparação da Query(comando)
 $sql = "INSERT INTO remedio VALUES(NULL,:nome,:horario,:data)";

@@ -63,8 +63,8 @@ class UsuarioDAOimpl implements UsuarioDao {
 
     public function updateUsuario($Usuario) {
         try {
-            $statement = $this->conn->prepare("UPDATE usuario SET nome=?, email=?,senha=?,idade=?,sexo =? WHERE id=?");
-            $statement->execute([$Usuario->getNome(), $Usuario->getEmail(),$Usuario->getSenha(),$Usuario->getIdade(),$Usuario->getId()]);
+            $statement = $this->conn->prepare("UPDATE usuario SET senha=? WHERE email=?");
+            $statement->execute([$Usuario->getSenha(),$Usuario->getEmail()]);
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
