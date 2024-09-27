@@ -33,6 +33,32 @@ class Usuario{
         return $this -> Sexo;
     }
 
+    // set
+
+    public function setId($Id){
+        $this->Id = $Id;
+    }
+
+    public function setNome($Nome){
+        $this->Nome = $Nome;
+    }
+    
+    public function setEmail($Email){
+        $this->Email = $Email;
+    }
+
+    public function setSenha($Senha){
+        $this->Senha = $Senha;
+    }
+
+    public function setIdade($Idade){
+        $this->Idade = $Idade;
+    }
+
+    public function setSexo($Sexo){
+        $this->Sexo = $Sexo;
+    }
+
 }
 
 
