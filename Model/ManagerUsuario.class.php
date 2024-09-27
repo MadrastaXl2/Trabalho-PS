@@ -27,12 +27,12 @@ class UsuarioDAOimpl implements UsuarioDao {
             $statement = $this->conn->query("SELECT * FROM usuario");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Usuario = new Usuario();
-                $Usuario->getId($row['id']);
-                $Usuario->getnome($row['nome']);
-                $Usuario->getEmail($row['email']);
-                $Usuario->getSenha($row['senha']);
-                $Usuario->getIdade($row['idade']);
-                $Usuario->getSexo($row['sexo']);
+                $Usuario->setId($row['id']);
+                $Usuario->setnome($row['nome']);
+                $Usuario->setEmail($row['email']);
+                $Usuario->setSenha($row['senha']);
+                $Usuario->setIdade($row['idade']);
+                $Usuario->setSexo($row['sexo']);
                 $Usuarios[] = $Usuario;
             }
         } catch (PDOException $e) {
@@ -48,12 +48,12 @@ class UsuarioDAOimpl implements UsuarioDao {
             $statement->execute([$id]);
             $row = $statement->fetch(PDO::FETCH_ASSOC);
             if ($row) {
-                $Usuario->getId($row['id']);
-                $Usuario->getnome($row['name']);
-                $Usuario->getEmail($row['email']);
-                $Usuario->getSenha($row['senha']);
-                $Usuario->getIdade($row['idade']);
-                $Usuario->getSexo($row['sexo']);
+                $Usuario->setId($row['id']);
+                $Usuario->setnome($row['name']);
+                $Usuario->setEmail($row['email']);
+                $Usuario->setSenha($row['senha']);
+                $Usuario->setIdade($row['idade']);
+                $Usuario->setSexo($row['sexo']);
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
