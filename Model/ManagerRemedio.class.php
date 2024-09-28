@@ -13,7 +13,7 @@ class RemediosDAOImple implements RemedioDao {
 
     public function insertRemedios($Remedio){
         try {
-            $statement = $this->conn->prepare("INSERT INTO usuario VALUES null, :nome, :horario, :data");
+            $statement = $this->conn->prepare("INSERT INTO remedio VALUES null, :nome, :horario, :data");
             $statement->execute([':nome' => $Remedio->getNome(),':horario' => $Remedio->getHorario(),':data' => $Remedio->getData()]);
         }
         catch(PDOException $e){
@@ -27,10 +27,10 @@ class RemediosDAOImple implements RemedioDao {
             $statement = $this->conn->query("SELECT * FROM remedio");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Remedio = new Remedio();
-                $Remedio->getId($row('id'));
-                $Remedio->getNome($row('nome'));
-                $Remedio->getHorario($row('horario'));
-                $Remedio->getData($row('data'));
+                $Remedio->setId($row('id'));
+                $Remedio->setNome($row('nome'));
+                $Remedio->setHorario($row('horario'));
+                $Remedio->setData($row('data'));
                 $Remedios[] = $Remedio;
               
             }
@@ -47,10 +47,10 @@ class RemediosDAOImple implements RemedioDao {
             $statement->execute([$id]);
             $row = $statement->fetch(PDO::FETCH_ASSOC);
             if ($row) {
-                $Remedio->getId($row['id']);
-                $Remedio->getNome($row['nome']);
-                $Remedio->getHorario($row['horario']);
-                $Remedio->getData($row['data']);
+                $Remedio->setId($row['id']);
+                $Remedio->setNome($row['nome']);
+                $Remedio->setHorario($row['horario']);
+                $Remedio->setData($row['data']);
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();

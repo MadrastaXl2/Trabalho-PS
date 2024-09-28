@@ -7,6 +7,7 @@ class Remedio{
     private $Horario;
     private $Data;
 
+    // Get
     public function getId(){
         return $this -> Id;
     }
@@ -21,6 +22,20 @@ class Remedio{
 
     public function getData(){
         return $this -> Data;
+    }
+
+    // Set
+    public function setId($Id){
+        $this->Id = $Id;
+    }
+    public function setNome($Nome){
+        $this->Nome = $Nome;
+    }
+    public function setHorario($Horario){
+        $this->Horario = $Horario;
+    }
+    public function setData($Data){
+        $this->Data = $Data;
     }
 }
 

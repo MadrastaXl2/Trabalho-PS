@@ -1,3 +1,11 @@
+<?php
+require_once '../Model/Conexao.class.php';
+require_once '../Model/ManagerRemedio.class.php';
+require_once '../Model/RemedioDAO.php';
+require_once '../Model/Remedio.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,23 +24,8 @@
 </head>
 <body>
 <?php 
-    $hostname = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "pit";
-
-    //Conectar
-    $conn = new mysqli($hostname, $username, $password, $database);
-
-    if ($conn -> error){
-        die("Erro ao conectar $conn -> error");
-    }
-
-    //Query
-    $sql = "SELECT * FROM remedio";
-
-    //Executar query
-    $resultado = $conn->query($sql);
+    $remedioDAO = new RemediosDAOImple();
+    $remedios = $remedioDAO->getTodosRemedios();
 ?>
 <h1 class="text-center">Cadastro de Remédios</h1>
 <table class="table table-striped table-bordered">
@@ -45,15 +38,15 @@
     </thead>  
     <tbody>
         <?php 
-        foreach ($resultado as $linha){
+        foreach ($remedios as $remedio){
         ?>
             <tr>
-                <th scope="row"><?= $linha['id'] ?></th>
-                <td><?php echo $linha['Nome'] . '<br>'; ?></td>
-                <td><?php echo $linha['Horario'] . '<br>'; ?></td>
-                <td><?php echo $linha['Data'] . '<br>'; ?></td>     
-                <td><a href="../PHP/phpAlterar.php?id=<?= $linha['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $linha['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
+                <th scope="row"><?= $remedio->getId() ?></th>
+                <td><?php echo $remedio->getNome() . '<br>'; ?></td>
+                <td><?php echo $remedio->getHorario(). '<br>'; ?></td>
+                <td><?php echo $remedio->getData() . '<br>'; ?></td>     
+                <td><a href="../PHP/phpAlterar.php?id=<?= $remedio->getId() ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $remedio->getId()?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
             </tr>
         <?php } ?>
     </tbody>  

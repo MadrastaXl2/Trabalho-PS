@@ -8,7 +8,7 @@ $RemediosDAOImple = new RemediosDAOImple();
 $id = $_POST['id'];
 
 if (isset($id) && !empty($id)){
-    $RemediosDAOImple->getTodosRemedios($_POST);
+    $RemediosDAOImple->deleteRemedio($_POST); // Não seria deleteRemedio?
     header("Location: .../view/DeletaRemedio.php?cod=1");
 }
 

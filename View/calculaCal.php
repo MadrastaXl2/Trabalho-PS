@@ -1,5 +1,5 @@
 <?php
-include '../Model/ManagerCalculaCal.class.php';
+include '../Model/CalculaCal.class.php';
 include '../Model/Conexao.class.php'
 ?>
 <!DOCTYPE html>

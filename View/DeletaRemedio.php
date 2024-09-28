@@ -44,7 +44,7 @@
     <div id="divGeral">
         <h1 class="text-center">Cadastro De Remedios</h1>
         <form method="POST" action="../PHP/phpAlterar.php">
-        <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+            <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
             <div>
                 <label for="Name">Nome do remedio : </label>
                 <input type="name" id="name" name="nome">
