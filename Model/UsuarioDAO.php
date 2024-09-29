@@ -1,6 +1,6 @@
 <?php
 
-interface UsuarioDao {
+interface UsuarioDao extends Usuario{
     public function insertUsuario($Usuario);
     public function getTodosUsuarios();
     public function getUmUsuario($id); 

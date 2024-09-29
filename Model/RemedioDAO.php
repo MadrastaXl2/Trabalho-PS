@@ -1,6 +1,6 @@
 <?php
 
-interface RemedioDao {
+interface RemedioDao extends Remedio {
     public function insertRemedios($Remedio);
     public function getTodosRemedios();
     public function getUmRemedio($id);
