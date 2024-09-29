@@ -22,7 +22,7 @@ class RemediosDAOImple implements RemedioDao {
     }
 
     public function getTodosRemedios() {
-        $Remedio = array();
+        $Remedios = array();
         try {
             $statement = $this->conn->query("SELECT * FROM remedio");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {

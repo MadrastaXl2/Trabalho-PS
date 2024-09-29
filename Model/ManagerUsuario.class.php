@@ -22,7 +22,7 @@ class UsuarioDAOimpl implements UsuarioDao {
     }
 
     public function getTodosUsuarios() {
-        $Usuario = array();
+        $Usuarios = array();
         try {
             $statement = $this->conn->query("SELECT * FROM usuario");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
