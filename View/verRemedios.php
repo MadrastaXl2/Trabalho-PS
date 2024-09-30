@@ -36,6 +36,7 @@ $Remedios = new RemediosDAOImple();
     </thead>  
     <tbody>
         <?php 
+         
         foreach ($Remedios->getTodosRemedios() as $remedio){
         ?>
             <tr>
