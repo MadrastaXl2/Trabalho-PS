@@ -24,7 +24,7 @@ class RemediosDAOImple implements RemedioDao {
     public function getTodosRemedios() {
         $Remedios = array();
         try {
-            $statement = $this->conn->query("SELECT * FROM remedio");
+            $statement = $this->conn->prepare("SELECT * FROM remedio");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Remedio = new Remedio();
                 $Remedio->setId($row['id']);
