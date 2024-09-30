@@ -24,10 +24,7 @@ $Remedios = new RemediosDAOImple();
     </style>
 </head>
 <body>
-<?php 
-    $remedioDAO = new RemediosDAOImple();
-    $remedios = $remedioDAO->getTodosRemedios();
-?>
+
 <h1 class="text-center">Cadastro de Remédios</h1>
 <table class="table table-striped table-bordered">
     <thead>
