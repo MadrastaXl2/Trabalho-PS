@@ -27,10 +27,10 @@ class RemediosDAOImple implements RemedioDao {
             $statement = $this->conn->query("SELECT * FROM remedio");
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $Remedio = new Remedio();
-                $Remedio->setId($row('id'));
-                $Remedio->setNome($row('nome'));
-                $Remedio->setHorario($row('horario'));
-                $Remedio->setData($row('data'));
+                $Remedio->setId($row['id']);
+                $Remedio->setNome($row['nome']);
+                $Remedio->setHorario($row['horario']);
+                $Remedio->setData($row['data']);
                 $Remedios[] = $Remedio;
               
             }
