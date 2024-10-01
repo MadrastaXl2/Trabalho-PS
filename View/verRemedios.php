@@ -34,8 +34,7 @@ $Remedios = new RemediosDAOImple();
         <th scope="col" class="text-center" colspan="2">Ações</th>
     </thead>  
     <tbody>
-        <?php 
-         
+        <?php          
         foreach ($Remedios->getTodosRemedios() as $remedio){
         ?>
             <tr>
