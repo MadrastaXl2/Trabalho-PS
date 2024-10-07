@@ -5,6 +5,7 @@ require_once '../Model/RemedioDAO.php';
 require_once '../Model/Remedio.php';
 
 $Remedios = new RemediosDAOImple();
+
 ?>
 
 <!DOCTYPE html>
@@ -38,10 +39,10 @@ $Remedios = new RemediosDAOImple();
         foreach ($Remedios->getTodosRemedios() as $remedio){
         ?>
             <tr>
-                <th scope="row"><?= $remedio['id'] ?></th>
-                <td><?php $remedio['nome']?></td>
-                <td><?php $remedio['horario'] ?></td>
-                <td><?php $remedio['data'] ?></td>     
+                <th scope="row"><?= $remedio->getId() ?></th>
+                <td><?php $remedio->getNome()?></td>
+                <td><?php $remedio->getHorario() ?></td>
+                <td><?php $remedio->getData() ?></td>     
                 <td><a href="../PHP/phpAlterar.php?id=<?= $remedio->getId() ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
                 <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $remedio->getId()?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
             </tr>

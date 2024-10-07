@@ -4,7 +4,7 @@ require_once 'RemedioDAO.php';
 require_once 'Conexao.class.php';
 require_once 'Remedio.php';
 
-class RemediosDAOImple implements RemedioDao {
+class RemediosDAOImple extends Remedio implements RemedioDao {
     private $conn;
 
     public function __construct() {
