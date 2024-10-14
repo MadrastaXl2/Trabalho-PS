@@ -4,7 +4,7 @@ require_once 'UsuarioDAO.php';
 require_once 'Conexao.class.php';
 require_once 'Usuario.php';
 
-class UsuarioDAOimpl implements UsuarioDao {
+class UsuarioDAOimpl extends Conexao implements UsuarioDao {
     private $conn;
 
     public function __construct() {
