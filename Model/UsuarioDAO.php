@@ -5,7 +5,7 @@ interface UsuarioDao extends Usuario{
     public function getTodosUsuarios();
     public function getUmUsuario($id); 
     public function updateUsuario($Usuario); 
-    public function deleteUsuario($Usuario);
+    public function deleteUsuario($id);
 }
 
 ?>

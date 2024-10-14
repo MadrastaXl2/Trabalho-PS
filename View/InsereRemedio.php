@@ -54,15 +54,15 @@ $remedio = new Remedio();
         <form method="POST" action="../Controller/Remedio/insert_remedio.php">
             <div>
                 <label for="Name">Nome do remedio : </label>
-                <input type="name" id="name" name="nome" <?$remedio->setNome("nome");?>>
+                <input type="name" id="name" name="nome">
             </div>
             <div>
                 <label for="time">Frequência do remédio (em horas):   </label>
-                <input type="number" id="time" name="horario" <?$remedio->setHorario("horario");?>>
+                <input type="number" id="time" name="horario">
             </div>             
             <div>
                 <label for="Date">Periodo de medicação:</label>
-                <input type="Date" id="Date" name="data" <?$remedio->setDAta("data");?> >
+                <input type="Date" id="Date" name="data">
             </div>
             <button type="submit" name="submit" class="btn btn-success">Cadastrar</button>
         </form>
