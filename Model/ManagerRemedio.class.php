@@ -4,17 +4,19 @@ require_once 'RemedioDAO.php';
 require_once 'Conexao.class.php';
 require_once 'Remedio.php';
 
-class RemediosDAOImple extends Remedio implements RemedioDao {
-    private $conn;
-
-    public function __construct() {
-        $this->conn = conexao::get_instance();
-    }
+class RemediosDAOImple extends Conexao implements RemedioDao {
 
     public function insertRemedios($Remedio){
         try {
-            $statement = $this->conn->prepare("INSERT INTO remedio VALUES null, :nome, :horario, :data");
-            $statement->execute([':nome' => $Remedio->getNome(),':horario' => $Remedio->getHorario(),':data' => $Remedio->getData()]);
+            $pdo = parent::get_instance();
+
+            $sql = "INSERT INTO remedio VALUES null, :nome, :horario, :data";
+
+            $statement = $pdo->prepare($sql);
+            foreach ($Remedio as $key => $value){
+                $statement->bindValue(":$key", $value);
+            }
+            $statement->execute();
         }
         catch(PDOException $e){
             echo "Error: " . $e->getMessage();
@@ -24,16 +26,14 @@ class RemediosDAOImple extends Remedio implements RemedioDao {
     public function getTodosRemedios() {
         $Remedios = array();
         try {
-            $statement = $this->conn->prepare("SELECT * FROM remedio");
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            $Remedio = new Remedio();
-            $Remedio->setId($row['id']);
-            $Remedio->setNome($row['nome']);
-            $Remedio->setHorario($row['horario']);
-            $Remedio->setData($row['data']);
-            $Remedios[] = $Remedio;
+            $pdo = parent::get_instance();
+            $sql = "select * from remedio order by id";
+            $statement = $pdo->query($sql);
+            $statement->execute();
+
+            return $statement->fetchAll();
               
-            }
+            
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
@@ -43,15 +43,12 @@ class RemediosDAOImple extends Remedio implements RemedioDao {
     public function getUmRemedio($id) {
         $Remedio = new Remedio();
         try {
-            $statement = $this->conn->prepare("SELECT * FROM remedio WHERE id=?");
-            $statement->execute([$id]);
-            $row = $statement->fetch(PDO::FETCH_ASSOC);
-            if ($row) {
-                $Remedio->setId($row['id']);
-                $Remedio->setNome($row['nome']);
-                $Remedio->setHorario($row['horario']);
-                $Remedio->setData($row['data']);
-            }
+            $pdo = parent::get_instance();
+            $sql = "select * from remedio where id = :id";
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(":id", $id);
+            $statement->execute();
+            return $statement->fetchAll();
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
@@ -60,17 +57,26 @@ class RemediosDAOImple extends Remedio implements RemedioDao {
 
     public function updateRemedio($Remedio) {
         try {
-            $statement = $this->conn->prepare("UPDATE remedio SET nome=?, horario=?,data=? WHERE id=?");
-            $statement->execute([$Remedio->getNome(), $Remedio->getHorario(),$Remedio->getData(),$Remedio->getId()]);
+            $pdo = parent::get_instance();
+            $sql = "UPDATE remedio SET nome=?, horario=?,data=? WHERE id=?";
+            var_dump($sql);
+            $statement = $pdo->prepare($sql);
+            foreach ($Remedio as $key => $value){
+                $statement->bindValue(":$key", $value);
+            }
+            $statement->execute();
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
     }
 
-    public function deleteRemedio($Remedio) {
+    public function deleteRemedio($Id) {
         try {
-            $statement = $this->conn->prepare("DELETE FROM remedio WHERE id=?");
-            $statement->execute([$Remedio->getId()]);
+            $pdo = parent::get_instance();
+            $sql = "delete from client where id = :id";
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(":id", $Id);
+            $statement->execute();
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
