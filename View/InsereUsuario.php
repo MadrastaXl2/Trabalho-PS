@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<?
+include "../Model/Conexao.class.php";
+include "../Model/ManagerUsuario.class.php";
 
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +48,7 @@
     </header>
     <div id="divGeral">
         <h1 class="text-center">Cadastro Usuario</h1>
-        <form method="POST" action="../Controller/insert_usuario.php"> // Alterei para ../Controller/insert_usuario.php
+        <form method="POST" action="../Controller/Usuario/insert_usuario.php"> 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nome: </label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="nome">
