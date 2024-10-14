@@ -1,6 +1,6 @@
 <?php 
 
-include '.../Model/MenagerRemedio.class.php';
+include '.../Model/ManagerRemedio.class.php';
 include '.../Model/Conexao.class.php';
 
 $RemediosDAOImple = new RemediosDAOImple();

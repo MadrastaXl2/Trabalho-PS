@@ -1,14 +1,16 @@
 <?php 
 
-include '.../Model/ManagerRemedio.class.php';
-include '.../Model/Conexao.class.php';
+include 'Conexao.class.php';
+include 'ManagerRemedio.class.php';
+
 
 $RemediosDAOImple = new RemediosDAOImple();
 
 
-if (!empty($_POST)) {
+if (!empty($_POST)){
     $RemediosDAOImple->insertRemedios($_POST);
-    header("Location: .../view/InsereRemedio.php?cod=1");
+    header("Location: ../View/InsereRemedio.php?cod=1");
 }
+
 
 ?>

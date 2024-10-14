@@ -49,6 +49,7 @@ $remedio = new Remedio();
             </div>
         </div>
     </header>
+
     <div id="divGeral">
         <h1 class="text-center">Cadastro De Remedios</h1>
         <form method="POST" action="../Controller/Remedio/insert_remedio.php">
