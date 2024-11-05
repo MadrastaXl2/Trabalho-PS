@@ -8,13 +8,19 @@ class RemediosDAOImple extends Conexao implements RemedioDao {
 
     public function insertRemedios($Remedio){
         try {
+            $nome = $Remedio->Nome;
+            $horario = $Remedio->Horario;
+            $data = $Remedio->Data;
+
             $pdo = parent::get_instance();
 
-            $sql = "INSERT INTO remedio VALUES null, :nome, :horario, :data";
+            $sql = "INSERT INTO remedio (nome, horario, data) VALUES :nome, :horario, :data";
 
             $statement = $pdo->prepare($sql);
             foreach ($Remedio as $key => $value){
-                $statement->bindValue(":$key", $value);
+                $statement->bindValue(":nome", $nome);
+                $statement->bindValue(":horario", $horario);
+                $statement->bindValue(":data", $data);
             }
             $statement->execute();
         }
@@ -41,7 +47,7 @@ class RemediosDAOImple extends Conexao implements RemedioDao {
     }
 
     public function getUmRemedio($id) {
-        $Remedio = new Remedio();
+        // $Remedio = new Remedio();
         try {
             $pdo = parent::get_instance();
             $sql = "select * from remedio where id = :id";
@@ -52,7 +58,7 @@ class RemediosDAOImple extends Conexao implements RemedioDao {
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
-        return $Remedio;
+       // return $Remedio;
     }
 
     public function updateRemedio($Remedio) {

@@ -37,6 +37,13 @@ class Remedio{
     public function setData($Data){
         $this->Data = $Data;
     }
+
+    public function __construct(string $Nome, string $Horario, string $Data)
+    {
+        $this->Nome = $Nome; 
+        $this->Horario = $Horario;
+        $this->Data = $Data;
+    }
 }
 
 
