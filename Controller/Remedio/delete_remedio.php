@@ -3,21 +3,9 @@
 require_once("../../Model/ManagerRemedio.class.php");
 require_once("../../Model/Conexao.class.php");
 
-<<<<<<< HEAD
-$RemediosDAOImple = new RemediosDAOImpl();
-=======
-if(isset($_POST['submit'])){
-    $controller = new DeleteRemedioController();
-    $controller->DeletarRemedio($_POST);
-}
->>>>>>> 0b8fc6ac8fcd5a4117f32b9b1729dfa1d92085c1
+$controller = new DeleteRemedioController();
+$controller->DeletarRemedio($_POST);
 
-
-<<<<<<< HEAD
-if (isset($id) && !empty($id)){
-    $RemediosDAOImple->deleteRemedio($_POST);
-    header("Location: ../../view/verRemedios.php?cod=1");
-=======
 class DeleteRemedioController{
 
     private $remedioDAO;
@@ -29,15 +17,13 @@ class DeleteRemedioController{
 
        $remedio = new Remedio();
        $remedio->Id = $dados['id'] ?? '';
-      
+       
+       $this->remedioDAO->deleteRemedio($remedio);
 
-       $this->remedioDAO->insertRemedios($remedio);
-
-       header("Location: ../../View/VerRemedio.php?cod=3");
+       header("Location: ../../View/verRemedio.php?cod=1");
        exit();
 
     }
->>>>>>> 0b8fc6ac8fcd5a4117f32b9b1729dfa1d92085c1
 }
 
 ?>
