@@ -8,8 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-<form>
-<h1 class="text-center">Atualiza Remédio</h1>
+<form method="$_POST" action="../Controller/Remedio/update_remedio.php">
+    <h1 class="text-center">Atualiza Remédio</h1>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Id</label>
     <input type="text" class="form-control" id="id" readonly>
