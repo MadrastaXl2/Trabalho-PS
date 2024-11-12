@@ -3,16 +3,8 @@
 require_once("../../Model/ManagerRemedio.class.php");
 require_once("../../Model/Conexao.class.php");
 
-
-   $controller = new DeleteRemedioController();
-    $controller->DeletarRemedio($_POST);
-
-if(isset($_POST['submit'])){
-    $controller = new DeleteRemedioController();
-    $controller->DeletarRemedio($_POST);
-}
-
-
+$controller = new DeleteRemedioController();
+$controller->DeletarRemedio($_POST);
 
 class DeleteRemedioController{
 
@@ -21,15 +13,14 @@ class DeleteRemedioController{
         $this->remedioDAO = new RemediosDAOImpl();
     }
     
-    public function DeletarRemedio($dados){
+    public function DeletarRemedio($id){
 
        $remedio = new Remedio();
-       $remedio->Id = $dados['id'] ?? '';
-      
+       $remedio->Id = $id['id'] ?? '';
+       
+       $this->remedioDAO->deleteRemedio($remedio);
 
-       $this->remedioDAO->insertRemedios($remedio);
-
-       header("Location: ../../View/VerRemedio.php?cod=3");
+       header("Location: ../../View/verRemedios.php?cod=1");
        exit();
 
     }
