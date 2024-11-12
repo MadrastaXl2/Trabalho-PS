@@ -1,28 +1,21 @@
- <?php
+<?php
 
-// include '../Model/Conexao.class.php';
-// include '../Model/ManagerUsuario.class.php';
+include '.../Model/MenagerUsuario.class.php';
+include '.../Model/Conexao.class.php';
 
+if(isset($_POST['submit'])){
+    $controller = new UpdateUsuarioController();
+    $controller->InsereUsuarios($_POST);
+}
 
-// $UsuarioDAOimpl = new UsuarioDAOimpl();
-
-// if (!empty($_POST)) {
-//     $UsuarioDAOimpl->insertUsuario($_POST);
-//     header("Location: ../View/InsereUsuario.php?cod=1");
-// }
-
-require_once '../Model/Conexao.class.php';
-require_once '../Model/Usuario.php';
-
-class InsertUsuarioController {
+class UpdateUsuarioController {
 private $usuarioDAO;
-
 
 public function __construct() {
     $this->usuarioDAO = new UsuarioDAOImpl();
 }
 
-public function inserirUsuario($dados) {
+public function InsereUsuarios($dados) {
     // Criando objeto Usuario a partir dos dados do formulário
     $usuario = new Usuario();
     $usuario->Nome = $dados['nome'] ?? '';

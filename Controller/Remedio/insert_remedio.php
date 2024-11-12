@@ -28,18 +28,6 @@ class InsertRemedioController{
 
     }
 
-    // public function inserirRemedio($dados){
-
-    //     $RemediosDAOImple = new RemediosDAOImple();
-    //     $Remedio = new Remedio($_POST["nome"], $_POST["horario"], $_POST["data"]);
-
-        
-
-    //     if (!empty($Remedio)) {
-    //         $RemediosDAOImple->insertRemedios($Remedio);
-    //         header("Location: .../view/InsereRemedio.php?cod=1");
-    //     }
-    // }
    
 }
 
