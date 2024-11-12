@@ -22,6 +22,10 @@
     <label for="exampleInputPassword1" class="form-label">Horario</label>
     <input type="text" class="form-control" id="inputHorario">
   </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Data</label>
+    <input type="date" class="form-control" id="inputHorario">
+  </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
