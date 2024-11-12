@@ -13,14 +13,14 @@ class DeleteRemedioController{
         $this->remedioDAO = new RemediosDAOImpl();
     }
     
-    public function DeletarRemedio($dados){
+    public function DeletarRemedio($id){
 
        $remedio = new Remedio();
-       $remedio->Id = $dados['id'] ?? '';
+       $remedio->Id = $id['id'] ?? '';
        
        $this->remedioDAO->deleteRemedio($remedio);
 
-       header("Location: ../../View/verRemedio.php?cod=1");
+       header("Location: ../../View/verRemedios.php?cod=1");
        exit();
 
     }

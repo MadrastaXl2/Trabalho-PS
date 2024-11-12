@@ -76,7 +76,7 @@ class RemediosDAOImpl implements RemedioDao {
     public function deleteRemedio($Id) {    
         try {
             $pdo = $this->conexao;
-            $sql = "delete from client where id = :id";
+            $sql = "delete from remedio where id = :id";
             $statement = $pdo->prepare($sql);
             $statement->bindValue(":id", $Id, PDO::PARAM_INT);
             $statement->execute();
