@@ -2,10 +2,10 @@
 
 class Remedio{
 
-    private $Id;
-    private $Nome;
-    private $Horario;
-    private $Data;
+    public $Id;
+    public $Nome;
+    public $Horario;
+    public $Data;
 
     // Get
     public function getId(){
@@ -35,13 +35,6 @@ class Remedio{
         $this->Horario = $Horario;
     }
     public function setData($Data){
-        $this->Data = $Data;
-    }
-
-    public function __construct(string $Nome, string $Horario, string $Data)
-    {
-        $this->Nome = $Nome; 
-        $this->Horario = $Horario;
         $this->Data = $Data;
     }
 }

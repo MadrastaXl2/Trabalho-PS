@@ -3,12 +3,27 @@
 include '.../Model/MenagerRemedio.class.php';
 include '.../Model/Conexao.class.php';
 
-$RemediosDAOImple = new RemediosDAOImple();
+class UpdateRemedioController{
 
-var_dump($_POST);
-if (!empty($_POST)) {
-    $RemediosDAOImple->updateRemedio($_POST);
-    header("Location: .../view/AlteraRemedio.php?cod=1");
+    private $remedioDAO;
+    public function __construct(){
+        $this->remedioDAO = new RemediosDAOImpl();
+    }
+    
+    public function updateRemedio($dados){
+
+       $remedio = new Remedio();
+       $remedio->Nome = $dados['nome'] ?? '';
+       $remedio->Horario = $dados['horario'] ?? '';
+       $remedio->Data = $dados['data'] ?? '';
+
+       $this->remedioDAO->updateRemedio($remedio);
+
+       header("Location: .../view/AlteraRemedio.php?cod=1");
+       exit();
+
+    }
+   
 }
 
 ?>

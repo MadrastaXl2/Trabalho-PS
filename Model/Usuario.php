@@ -2,12 +2,12 @@
 
 class Usuario{
 
-    private $Id;
-    private $Nome;
-    private $Email;
-    private $Senha;
-    private $Idade;
-    private $Sexo;
+    public $Id;
+    public $Nome;
+    public $Email;
+    public $Senha;
+    public $Idade;
+    public $Sexo;
 
     public function getId(){
         return $this ->Id;

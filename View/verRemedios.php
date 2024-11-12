@@ -4,7 +4,7 @@ require_once '../Model/ManagerRemedio.class.php';
 require_once '../Model/RemedioDAO.php';
 require_once '../Model/Remedio.php';
 
-$Remedios = new RemediosDAOImple();
+$Remedios = new RemediosDAOImpl();
 
 ?>
 
@@ -43,7 +43,7 @@ $Remedios = new RemediosDAOImple();
                 <td><?= $remedio['nome']?></td>
                 <td><?= $remedio['horario'] ?></td>
                 <td><?= $remedio['data'] ?></td>     
-                <td><a href="../PHP/phpAlterar.php?id=<?= $remedio['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a href="AlteraRemedio.php?id=<?= $remedio['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
                 <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $remedio['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
             </tr>
         <?php } ?>
