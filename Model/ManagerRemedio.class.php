@@ -1,21 +1,21 @@
 <?php
 
-require_once 'RemedioDAO.php';
-require_once 'Conexao.class.php';
-require_once 'Remedio.php';
+require_once("RemedioDAO.php");
+require_once("Conexao.class.php");
+require_once("Remedio.php");
 
 class RemediosDAOImpl implements RemedioDao {
 
     private $conexao;
     
     public function __construct() {
-        $this->conexao = new Conexao();
+        $this->conexao = Conexao::get_instance();
     }
 
     public function insertRemedios($remedio){
         try {
-            $pdo = $this->conexao->get_instance();
-            $sql = "INSERT INTO remedio (nome, horario, data) VALUES :nome, :horario, :data";
+            $pdo = $this->conexao;
+            $sql = "INSERT INTO remedio (nome, horario, data) VALUES (:nome, :horario, :data)";
             $statement = $pdo->prepare($sql);
 
             $statement->bindValue(":nome", $remedio->Nome);
@@ -32,7 +32,7 @@ class RemediosDAOImpl implements RemedioDao {
 
     public function getTodosRemedios() {
         try {
-            $pdo = $this->conexao->get_instance();
+            $pdo = $this->conexao;
             $sql = "select * from remedio order by id desc";
             $statement = $pdo->query($sql);
             return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -45,7 +45,7 @@ class RemediosDAOImpl implements RemedioDao {
     public function getUmRemedio($id) {
         // $Remedio = new Remedio();
         try {
-            $pdo = $this->conexao->get_instance();
+            $pdo = $this->conexao;
             $sql = "select * from remedio where id = :id";
             $statement = $pdo->prepare($sql);
             $statement->bindValue(":id", $id, PDO::PARAM_INT);
@@ -59,7 +59,7 @@ class RemediosDAOImpl implements RemedioDao {
 
     public function updateRemedio($remedio) {
         try {
-            $pdo = $this->conexao->get_instance();
+            $pdo = $this->conexao;
             $sql = "UPDATE remedio SET nome= :nome, horario= :horario,data= :data WHERE id=?";
             $statement = $pdo->prepare($sql);
 
@@ -73,9 +73,9 @@ class RemediosDAOImpl implements RemedioDao {
         }
     }
 
-    public function deleteRemedio($Id) {
+    public function deleteRemedio($Id) {    
         try {
-            $pdo = $this->conexao->get_instance();
+            $pdo = $this->conexao;
             $sql = "delete from client where id = :id";
             $statement = $pdo->prepare($sql);
             $statement->bindValue(":id", $Id, PDO::PARAM_INT);

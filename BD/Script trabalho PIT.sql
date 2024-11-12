@@ -15,7 +15,4 @@ id int not null auto_increment primary key,
 nome varchar(100) not null,
 horario int not null,
 data date not null,
-
-fk_id_usuario int not null,
-foreign key (fk_id_usuario) references usuario(id) 
 )engine=InnoDB;

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <?php
-include "../Model/Conexao.class.php";
-include "..//Model/ManagerRemedio.class.php";
 
-$remedio = new Remedio();
 ?>
 <html lang="pt-br">
 <head>
