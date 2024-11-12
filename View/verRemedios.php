@@ -44,7 +44,7 @@ $Remedios = new RemediosDAOImpl();
                 <td><?= $remedio['horario'] ?></td>
                 <td><?= $remedio['data'] ?></td>     
                 <td><a href="AlteraRemedio.php?id=<?= $remedio['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $remedio['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
+                <td><a href="../Controller/Remedio/delete_remedio.php?id=<?= $remedio['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
             </tr>
         <?php } ?>
     </tbody>  
