@@ -1,7 +1,7 @@
 <?php 
 
-require_once("../../Model/ManagerRemedio.class.php");
-require_once("../../Model/Conexao.class.php");
+require_once ("../../Model/ManagerRemedio.class.php");
+require_once ("../../Model/Conexao.class.php");
 
 if(isset($_POST['submit'])){
     $controller = new InsertRemedioController();

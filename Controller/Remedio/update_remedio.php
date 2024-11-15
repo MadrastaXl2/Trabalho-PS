@@ -1,7 +1,12 @@
 <?php
 
-include '.../Model/MenagerRemedio.class.php';
-include '.../Model/Conexao.class.php';
+require_once ('../../Model/ManagerRemedio.class.php');
+require_once ('../../Model/Conexao.class.php');
+
+if(isset($_POST['submit'])){
+    $controller = new UpdateRemedioController();
+    $controller->updateRemedio($_POST);
+}
 
 class UpdateRemedioController{
 
@@ -19,7 +24,7 @@ class UpdateRemedioController{
 
        $this->remedioDAO->updateRemedio($remedio);
 
-       header("Location: .../view/updateRemedio.php?cod=1");
+       header("Location: ../../View/verRemedios.php?cod=1");
        exit();
 
     }

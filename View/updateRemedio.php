@@ -5,6 +5,7 @@ require_once '../Model/Remedio.php';
 
 $remedios = new RemediosDAOImpl;
 
+$dados = $remedios->getUmRemedio($_GET['id']);
 ?>
 
 <!DOCTYPE html>
@@ -25,15 +26,15 @@ $remedios = new RemediosDAOImpl;
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="inputNome" value="<?php echo $remedios->getUmRemedio($_GET['id'])?>">
+    <input type="text" class="form-control" id="inputNome" value="<?php echo $dados[0]['nome']?>">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Horario</label>
-    <input type="text" class="form-control" id="inputHorario" value="<?php echo $remedios->getUmRemedio($remedio['horario'])?>">
+    <input type="text" class="form-control" id="inputHorario" value="<?php echo $dados[0]['horario']?>">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Data</label>
-    <input type="date" class="form-control" id="inputHorario" value="<?php echo $remedios->getUmRemedio($remedio['data'])?>">
+    <input type="date" class="form-control" id="inputHorario" value="<?php echo $dados[0]['data']?>">
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

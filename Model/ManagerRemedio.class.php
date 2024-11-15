@@ -33,7 +33,7 @@ class RemediosDAOImpl implements RemedioDao {
     public function getTodosRemedios() {
         try {
             $pdo = $this->conexao;
-            $sql = "select * from remedio order by id desc";
+            $sql = "SELECT * FROM remedio ORDER BY id DESC";
             $statement = $pdo->query($sql);
             return $statement->fetchAll(PDO::FETCH_ASSOC);
                        
@@ -46,8 +46,9 @@ class RemediosDAOImpl implements RemedioDao {
         // $Remedio = new Remedio();
         try {
             $pdo = $this->conexao;
-            $sql = "select * from remedio where id = :id";
+            $sql = "SELECT * FROM remedio WHERE id = :id";
             $statement = $pdo->prepare($sql);
+            
             $statement->bindValue(":id", $id, PDO::PARAM_INT);
             $statement->execute();
             return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -76,7 +77,7 @@ class RemediosDAOImpl implements RemedioDao {
     public function deleteRemedio($Id) {    
         try {
             $pdo = $this->conexao;
-            $sql = "delete from remedio where id = :id";
+            $sql = "DELETE FROM remedio WHERE id = :id";
             $statement = $pdo->prepare($sql);
             $statement->bindValue(":id", $Id, PDO::PARAM_INT);
             $statement->execute();
