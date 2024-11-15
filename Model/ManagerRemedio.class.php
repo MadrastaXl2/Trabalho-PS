@@ -49,7 +49,7 @@ class RemediosDAOImpl implements RemedioDao {
             $sql = "SELECT * FROM remedio WHERE id = :id";
             $statement = $pdo->prepare($sql);
             
-            $statement->bindValue(":id", $id, PDO::PARAM_INT);
+            $statement->bindValue(":id", $id->id, PDO::PARAM_INT);
             $statement->execute();
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
