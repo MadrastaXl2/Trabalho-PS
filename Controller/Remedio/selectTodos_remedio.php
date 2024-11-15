@@ -1,7 +1,7 @@
 <?php 
 
-include '.../Model/ManagerRemedio.class.php';
-include '.../Model/Conexao.class.php';
+require_once("../../Model/ManagerRemedio.class.php");
+require_once("../../Model/Conexao.class.php");
 
 $RemediosDAOImple = new RemediosDAOImpl();
 
