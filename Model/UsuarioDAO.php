@@ -8,6 +8,7 @@ interface UsuarioDao{
     public function getUmUsuario($id); 
     public function updateUsuario($Usuario); 
     public function deleteUsuario($id);
+    public function UpdateSenha($Usuario);
 }
 
 ?>

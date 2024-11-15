@@ -90,58 +90,23 @@ class UsuarioDAOImpl implements UsuarioDAO {
             echo "Erro ao deletar usuário: " . $e->getMessage();
         }
     }
+
+    public function UpdateSenha($usuario)
+    {
+        try{
+            $pdo = $this->conexao->get_instance();
+            $sql = "UPDATE usuario SET senha = :senha where email = :email";
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(":senha", $usuario->Senha, PDO::PARAM_INT);
+            $statement->bindValue(":email", $usuario->Email, PDO::PARAM_INT);
+            $statement->execute();
+        }
+        catch (PDOException $e) {
+        echo "Erro ao alterar a senha do usuário: " . $e->getMessage();
+    }
+        
+    }
+
     }
     
-    // public function insertUsuario($Usuario){
-    //     $pdo = parent::get_instance();
-    //     $sql = "insert into usuario values (null, :nome, :email ,:senha,:idade,:sexo)";
-    //     $statement = $pdo->prepare($sql);
-    //     foreach ($Usuario as $key => $value){
-    //         $statement->bindValue(":$key",$value);
-    //     }
-    //     $statement->execute();
-    // }
-
-    // public function getTodosUsuarios() {
-    //     $pdo = parent::get_instance();
-    //     $sql = "select * from usuario order by id desc";
-    //     $statement = $pdo->query($sql);
-    //     return $statement->fetchAll();
-    // }
-
-    // public function getUmUsuario($id) {
-    //     $pdo = parent::get_instance();
-    //     $sql = "select * from usuario where id = :id";
-    //     $statement = $pdo->prepare($sql);
-    //     $statement->bindValue(":id", $id);
-    //     $statement->execute();
-    //     return $statement->fetchAll();
-    // }
-
-    // public function updateUsuario($Usuario) {
-    //     $pdo = parent::get_instance();
-    //     $sql = "update paciente
-    //                 set nome = :nome,
-    //                      email = :email,
-    //                         senha = :senha,
-    //                             idade = :idade,
-    //                                  sexo = :sexo
-    //                                      where id = :id";
-    //     var_dump($sql);
-    //     $statement = $pdo->prepare($sql);
-    //     foreach ($Usuario as $key => $value){
-    //         $statement->bindValue(":$key", $value);
-    //     }
-    //     $statement->execute();
-    // }
-
-    // public function deleteUsuario($id) {
-    //     $pdo = parent::get_instance();
-    //     $sql = "delete from usuario where id = :id";
-    //     $statement = $pdo->prepare($sql);
-    //     $statement->bindValue(":id", $id);
-    //     $statement->execute();
-    // }
-
-
 ?>

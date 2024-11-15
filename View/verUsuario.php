@@ -38,7 +38,7 @@ $Usuarios = new UsuarioDAOImpl();
     </thead>  
     <tbody>
         <?php          
-        foreach ($Usuarios->getUmUsuario(15) as $usuario){
+        foreach ($Usuarios->getUmUsuario($usuario['id']) as $usuario){
         ?>
             <tr>
                 <th scope="row"><?= $usuario['id'] ?></th>

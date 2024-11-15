@@ -8,6 +8,7 @@ interface RemedioDao{
     public function getUmRemedio($id);
     public function updateRemedio($Remedio);
     public function deleteRemedio($Id);
+  
 }
 
 ?>
