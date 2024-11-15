@@ -23,20 +23,20 @@
                 <h1>MedFy</h1>
                 <ul id="itensMenu">
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a>
+                    <a href="../index.php">Home</a>
                 </li>
                 <li>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                        <a href="verRemedios.php">Ver Remedios</a>
                 </li>
              
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                    <a href="Mapa.php">Mapa</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                    <a href="Agua.php">Agua</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                    <a href="calculaCal.php">Calculadora de calorias</a>
                 </li>
                 </ul>
                 <div id="ParteFinalCabecalho">
@@ -44,51 +44,19 @@
                         <div class="dropdown">
                             <!-- Corrigido o botão do dropdown -->
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
+                                <li><a class="dropdown-item" href="Login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="InsereUsuario.php">Cadastro de usuário</a></li>
+                                <li><a class="dropdown-item" href="InsereRemedio.php">Cadastro de Remédio</a></li>
+                                <li><a class="dropdown-item" href="faleConosco.php">Fale Conosco</a></li>
+                                <li><a class="dropdown-item" href="VerUsuario.php">Informações do usuario</a></li>
+                                <li><a class="dropdown-item" href="AlteraSenha.php">Alterar a Senha</a></li>
                             </ul>
                         </div>
                     </div>
             </div>
         </div>
     </header>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://i.ytimg.com/vi/6bxMXOe0ZIo/maxresdefault.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.shutterstock.com/image-vector/among-us-illustration-color-collection-600nw-1868578564.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://beetools.com.br/storage/posts/December2023/among-us.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        
-        <!--  <p class="digitacao">MedFy: Sua Saúde, Nossa Prioridade</p>-->
-         <!-- Botão centralizado -->
-        
-
-          <div class="carousel-content">
-            <p class="carousel-text">MedFy: Sua Saúde, Nossa Prioridade</p>
-            <a href="https://www.youtube.com/watch?v=_R8Qh0uLdQ4"><button class="carousel-button">Clique Aqui</button></a>
-        </div>
-
-
-    </div>
-      <main></main>
+    
   Maps 
     <main>
         <div>
