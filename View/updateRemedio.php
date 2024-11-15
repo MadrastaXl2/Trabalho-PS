@@ -66,6 +66,8 @@ $dados = $remedios->getUmRemedio($_GET['id']);
             </div>
         </div>
     </header>
+
+<main>
 <form method="POST" action="../Controller/Remedio/update_remedio.php">
     <h1 class="text-center">Atualiza Remédio</h1>
   <div class="mb-3">
@@ -87,7 +89,7 @@ $dados = $remedios->getUmRemedio($_GET['id']);
 
   <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
-
+</main>
 <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

@@ -57,7 +57,7 @@
         </div>
     </header>
     
-  Maps 
+
     <main>
         <div>
         <div class="mapBox">

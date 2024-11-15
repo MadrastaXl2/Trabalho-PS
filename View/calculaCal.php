@@ -60,6 +60,7 @@ include '../Model/Conexao.class.php'
             </div>
         </div>
     </header>
+<main>
     <div id="geral">
         <h1 class="text-center">Calculadora Calorias</h1>
         <form method="POST">
@@ -98,6 +99,7 @@ include '../Model/Conexao.class.php'
         
         
     ?>
+</main>
    <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">
