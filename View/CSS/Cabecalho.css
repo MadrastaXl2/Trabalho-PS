@@ -15,44 +15,50 @@
     letter-spacing: 1px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-*{ padding: 0;
-margin: 0;
-box-sizing: border-box;}
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 
 header{
     background-color:  #00385a;
-    border-bottom: 1px solid rgb(4, 0, 255);
-    height: 44px;
+    border-bottom: 1px solid #00385a;
     text-decoration: none;
-      
+    text-align: center;
 }
 
 #contato{
-  
     display: flex;
     align-items: center;
-    justify-content: space-around;
     padding-left: 8%;
-    text-decoration: none;
-   
+    text-decoration: none; 
+    justify-content: center;
+    text-align: center;
 }
 
 #contatoItens{
     display: flex;
-    height: 44px;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
-    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    color: #f5f5f5;
 }
 
-#contatoItens p{
+/* #contatoItens p{
     margin-right: 10px;
     color: #f5f5f5;
     text-decoration: none;
-}
+    align-items: center;
+    vertical-align: center;
+} */
 #contatoItens a{
+    margin-right: 10px;
+    color: #f5f5f5;
     text-decoration: none;
     color: #87CEFA;
     align-items: center;
@@ -71,7 +77,14 @@ header{
     height: 96px;
     background-color: #87CEFA;
 }
-
+#contato p{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: #f5f5f5;
+    text-decoration: none;
+}
 #container{
     display: flex;
     width: 100%;
@@ -136,6 +149,64 @@ header{
 .mapBox iframe{
     height:  70vh;
     width: 100vh;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo do texto */
+.carousel-text {
+    border-right: 4px solid;
+    width: 34ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(34),
+    pisca 0.5s infinite step-end 
+    alternate;
+    font-size: 28px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    margin-bottom: 15px; /* Espaço entre o texto e o botão */
+    
+}
+
+@keyframes typing{
+
+    from {
+        width: 0;
+    }
+
+}
+
+@keyframes pisca {
+
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+/* Estilo do botão */
+.carousel-button {
+    background-color: #87CEFA;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.carousel-button:hover {
+    background-color: #7AB8E5;
 }
 
 main{
@@ -285,3 +356,44 @@ opacity: 0.8;
     }
     
 }
+
+@media (max-width: 768px) {
+    .carousel-text {
+        font-size: 20px; /* Ajusta o tamanho do texto em telas menores */
+    }
+    .carousel-button {
+        padding: 8px 16px; /* Ajusta o tamanho do botão em telas menores */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-text {
+        font-size: 18px;
+    }
+    .carousel-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-text {
+        font-size: 20px; /* Ajusta o tamanho do texto em telas menores */
+    }
+    .carousel-button {
+        padding: 8px 16px; /* Ajusta o tamanho do botão em telas menores */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-text {
+        font-size: 18px;
+    }
+    .carousel-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+

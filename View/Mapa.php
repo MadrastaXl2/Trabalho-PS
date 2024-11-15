@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../CSS/pezinho.css">
+    <link rel="stylesheet" href="assets/CSS/pezinho.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Pezinho</title>
+    <title>Mapa</title>
 </head>
 <body>
     <header>
-        <div id="contato">
+            <div id="contato">
             <div id="contatoItens">
-                <p><strong>Phone: </strong><a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> +1 292 3293 4238</a></p>
-                <p><strong>Email: </strong> <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">info@yourdomain.com</a></p>
+                Phone: <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> +1 292 3293 4238</a>
+                Email: <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">info@yourdomain.com</a>
             </div>
         </div>
         <div id="menu">
@@ -44,20 +44,52 @@
                         <div class="dropdown">
                             <!-- Corrigido o botão do dropdown -->
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="LoginHtml.php">Login</a></li>
-                                <li><a class="dropdown-item" href="PagInsert.php">Cadastro de usuário</a></li>
-                                <li><a class="dropdown-item" href="InsertRemedio.php">Cadastro de Remédio</a></li>
-                                <li><a class="dropdown-item" href="usoInfo.php">Informações do usuário</a></li>
-                                <li><a class="dropdown-item" href="calculaCal.php">Calculadora de calorias</a></li>
-                                <li><a class="dropdown-item" href="Pag_Agua_HTML.php">Água</a></li>
-                                <li><a class="dropdown-item" href="mapa.php">Mapa</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
                             </ul>
                         </div>
                     </div>
             </div>
         </div>
     </header>
-<!--Maps-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/6bxMXOe0ZIo/maxresdefault.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.shutterstock.com/image-vector/among-us-illustration-color-collection-600nw-1868578564.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://beetools.com.br/storage/posts/December2023/among-us.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        <!--  <p class="digitacao">MedFy: Sua Saúde, Nossa Prioridade</p>-->
+         <!-- Botão centralizado -->
+        
+
+          <div class="carousel-content">
+            <p class="carousel-text">MedFy: Sua Saúde, Nossa Prioridade</p>
+            <a href="https://www.youtube.com/watch?v=_R8Qh0uLdQ4"><button class="carousel-button">Clique Aqui</button></a>
+        </div>
+
+
+    </div>
+      <main></main>
+  Maps 
     <main>
         <div>
         <div class="mapBox">
@@ -65,7 +97,7 @@
         </div>
 
         </div>
-    </main>
+    </main> 
     <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">
