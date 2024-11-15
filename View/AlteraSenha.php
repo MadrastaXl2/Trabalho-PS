@@ -56,3 +56,76 @@
             </div>
         </div>
     </header>
+
+
+    <!--<main> </main> -->
+
+
+
+    <footer>
+        <div id="conteudo_footer">
+            <div id="contatos_footer">
+                <h1>MedFy</h1>
+                <p>Sua Saúde, Nossa Prioridade</p>
+
+                <div id="redes_sociais_footer">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link" id="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link" id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+                <ul class="lista_footer">
+                    <li>
+                        <h3>Emergência</h3>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Números de Emergência</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Localização de Hospitais Próximos</a>
+                    </li>
+                </ul>
+
+                <ul class="lista_footer">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Beba Água</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Quantas Calorias Você Já perdeu?</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Já tomou seus remédios?</a>
+                    </li>
+                </ul>
+            <div id="footer_subscribe">
+                <h3>Se Inscreva</h3>
+
+                <p>
+                    Escreva seu e-mail para ser notificado de novas funcionalidades
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email"> 
+                   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><i class="fa-solid fa-square-envelope"></i></button></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer_copyright">
+            &#169 2024 all rights reserved MedFy
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,9 +1,3 @@
-
-<?
-include "../Model/Conexao.class.php";
-include "../Model/ManagerUsuario.class.php";
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -62,45 +56,25 @@ include "../Model/ManagerUsuario.class.php";
             </div>
         </div>
     </header>
-
-    <div id="divGeral">
-        <h1 class="text-center">Cadastro Usuario</h1>
-        <form method="POST" action="../Controller/Usuario/insert_usuario.php"> 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nome: </label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="nome">
-            </div>
-            <div id="linha2">
-                <div class="mb-4">
-                    <label for="exampleFormControlInput2" class="form-label">E-mail: </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput2" name="email">
-                </div>
-                <div class="sexo">
-                    <label for="radio">Sexo: </label>
-                    <input type="radio" value="Masculino" class="radioSexo" id="sexoId" name="sexo">
-                    <label for="radioSexo">Masculino</label>
-                    <input type="radio" value="Feminino" class="radioSexo" id="sexoId2" name="sexo">
-                    <label for="radioSexo">Feminino</label>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Idade: </label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" name="idade">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Senha: </label>
-                <input type="password" class="form-control" id="exampleFormControlInput1" name="senha">
-            </div>
-            <div id="buttons" class="text-center">
-                <div>
-                    <input type="submit" name="submit" class="btn btn-success" value="Cadastrar">
-                </div>
-                <div id="btnVoltar">
-                    <a href="../index.php">Voltar</a>
-                </div>
-            </div>
-        </form>
-    </div>
+    <form id="form" method="post" action="../PHP/envia.php">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" name="nome" placeholder="Nome">
+            <label for="floatingInput">Escreva o seu nome</label>
+        </div>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingPassword" name="email" placeholder="Email">
+            <label for="floatingPassword">Escreva o seu Email</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingPassword" name="assunto" placeholder="Assunto">
+            <label for="floatingPassword">Escreva o assunto do Email</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="mensagem" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Escreva o que você deseja falar</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
     <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">
