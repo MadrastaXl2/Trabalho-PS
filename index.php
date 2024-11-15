@@ -23,20 +23,20 @@
                 <h1>MedFy</h1>
                 <ul id="itensMenu">
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a>
+                    <a href="../index.php">Home</a>
                 </li>
                 <li>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                        <a href="../Trabalho-PS/View/verRemedios.php">Ver Remedios</a>
                 </li>
              
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                    <a href="../Trabalho-PS/View/Mapa.php">Mapa</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                    <a href="../Trabalho-PS/View/Agua.php">Agua</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
+                    <a href="calculaCal.php">Calculadora de calorias</a>
                 </li>
                 </ul>
                 <div id="ParteFinalCabecalho">
@@ -44,12 +44,12 @@
                         <div class="dropdown">
                             <!-- Corrigido o botão do dropdown -->
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./PAGS/Login.php">Login</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
-                                <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
+                            <li><a class="dropdown-item" href="../Trabalho-PS/View/Login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereUsuario.php">Cadastro de usuário</a></li>
+                                <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereRemedio.php">Cadastro de Remédio</a></li>
+                                <li><a class="dropdown-item" href="../Trabalho-PS/View/faleConosco.php">Fale Conosco</a></li>
+                                <li><a class="dropdown-item" href="../Trabalho-PS/View/verUsuario.php">Informações do usuario</a></li>
+                                <li><a class="dropdown-item" href="../Trabalho-PS/View/AlteraSenha.php">Alterar a Senha</a></li>
                             </ul>
                         </div>
                     </div>
