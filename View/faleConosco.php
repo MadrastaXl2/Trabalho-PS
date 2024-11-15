@@ -57,7 +57,7 @@
         </div>
     </header>
 <main>
-    <form id="form" method="post" action="../PHP/envia.php">
+    <form id="form" method="post" action="../Model/envia.php">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" name="nome" placeholder="Nome">
             <label for="floatingInput">Escreva o seu nome</label>
