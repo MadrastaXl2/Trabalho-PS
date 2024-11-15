@@ -5,7 +5,6 @@ require_once '../Model/Remedio.php';
 
 $remedios = new RemediosDAOImpl;
 
-
 ?>
 
 <!DOCTYPE html>
@@ -22,19 +21,19 @@ $remedios = new RemediosDAOImpl;
     <h1 class="text-center">Atualiza Remédio</h1>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Id</label>
-    <input type="text" class="form-control" id="id" values="<?php echo $remedios->getUmRemedio($remedio['id'])?>" readonly>
+    <input type="text" class="form-control" id="id" value="<?php echo $_GET['id']?>" readonly>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="inputNome" values="<?php echo $remedios->getUmRemedio($remedio['nome'])?>">
+    <input type="text" class="form-control" id="inputNome" value="<?php echo $remedios->getUmRemedio($_GET['id'])?>">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Horario</label>
-    <input type="text" class="form-control" id="inputHorario" values="<?php echo $remedios->getUmRemedio($remedio['horario'])?>">
+    <input type="text" class="form-control" id="inputHorario" value="<?php echo $remedios->getUmRemedio($remedio['horario'])?>">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Data</label>
-    <input type="date" class="form-control" id="inputHorario" values="<?php echo $remedios->getUmRemedio($remedio['data'])?>">
+    <input type="date" class="form-control" id="inputHorario" value="<?php echo $remedios->getUmRemedio($remedio['data'])?>">
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

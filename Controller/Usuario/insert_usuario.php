@@ -1,6 +1,6 @@
 <?php
 
-require_once ('../../Model/MenagerUsuario.class.php');
+require_once ('../../Model/ManagerUsuario.class.php');
 require_once ('../../Model/Conexao.class.php'); 
 
 if(isset($_POST['submit'])){
@@ -28,7 +28,7 @@ public function InsereUsuarios($dados) {
     $this->usuarioDAO->insertUsuario($usuario);
 
     // Redirecionamento após inserção
-    header("Location: ../View/InsereUsuario.php?cod=1");
+    header("Location: ../../View/InsereUsuario.php?cod=1");
     exit();
 }
 }
