@@ -1,7 +1,7 @@
 <?php
 
-include '.../Model/MenagerUsuario.class.php';
-include '.../Model/Conexao.class.php';
+include '../../Model/MenagerUsuario.class.php';
+include '../../Model/Conexao.class.php';
 
 if(isset($_POST['submit'])){
     $controller = new UpdateUsuarioController();
