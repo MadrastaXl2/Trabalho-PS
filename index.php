@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../Trabalho-PS/View/CSS/Cabecalho.css">
+    <link rel="stylesheet" href="assets/CSS/pezinho.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Medfy</title>
+    <title>Pezxinho</title>
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
                 <h1>MedFy</h1>
                 <ul id="itensMenu">
                 <li>
-                    <a href="../Trabalho-PS/View/Login.php">Login</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a>
                 </li>
                 <li>
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Coisas</a>
@@ -40,16 +40,16 @@
                 </li>
                 </ul>
                 <div id="ParteFinalCabecalho">
-                    <img src="./IMGS/Usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
+                    <img src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec=w240-h480-rw" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
                         <div class="dropdown">
                             <!-- Corrigido o botão do dropdown -->
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/Login.php">Login</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereUsuario.php">Cadastro de usuário</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereRemedio.php">Cadastro de Remédio</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/verUsuario.php">Informações do usuário</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/calculaCal.php">Calculadora de calorias</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/view/Agua.php">Água</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/LoginHtml.php">Login</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/PagInsert.php">Cadastro de usuário</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/InsertRemedio.php">Cadastro de Remédio</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/usoInfo.php">Informações do usuário</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/calculaCal.php">Calculadora de calorias</a></li>
+                                <li><a class="dropdown-item" href="./PAGS/Pag_Agua_HTML.php">Água</a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,7 +88,97 @@
 
 
     </div>
-      <main></main>   
+    <main>
+        <section id="quem-somos">
+            <div class="container">
+                <div id="texto-quem-somos">
+                    <h2>O que fazemos</h2>
+                    <p>
+                         Na <strong>MedFy</strong>, entendemos a importância vital de manter a regularidade no uso de medicamentos para garantir a saúde e o bem-estar. Nossa missão é simplificar e melhorar a vida de nossos clientes, garantindo que nunca percam o horário de seus remédios.
+                    </p>
+                    <p>
+                        Com a nossa inovadora tecnologia, oferecemos um serviço que vai além de simples lembretes. Desenvolvemos um sistema completo e intuitivo que ajuda na manutenção de seu cronograma de medicação, proporcionando tranquilidade e segurança para você e seus entes queridos.
+                    </p>
+                </div>
+                <div id="imagem-quem-somos">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000036098/desc/fba63c09f4dd41c841f23474840c8f5fe4d5378aae37a94ff39adfffa7ef0c11" alt="Imagem Quem Somos">
+                </div>
+            </div>
+        </section>
+    
+        <section id="sobre-nos">
+            <div class="container">
+                <div id="texto-sobre-nos">
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        Nosso compromisso é com a sua saúde e bem-estar. Reconhecemos a importância da adesão correta ao tratamento médico, e por isso, trabalhamos para facilitar ao máximo essa tarefa. Sabemos que manter uma rotina de medicação pode ser desafiador, mas estamos aqui para transformar essa experiência, tornando-a mais simples, prática e eficiente.
+                    </p>
+                    <p>
+                        Convidamos você a nos acompanhar nessa jornada e descobrir como podemos contribuir para uma vida mais saudável, com mais tranquilidade e eficácia no cuidado com sua saúde. Conte com a <strong>MedFy</strong> para simplificar o seu dia a dia e garantir que seu tratamento seja seguido de forma adequada.
+                    </p>
+                </div>
+                <div id="imagem-sobre-nos">
+                    <img src="https://static.wikia.nocookie.net/liga-da-zueira-oficial/images/b/bb/Among-us-Tripulante_6jajwgwhaod18263j01.png/revision/latest/scale-to-width-down/480?cb=20230319104546&path-prefix=pt-br" alt="Imagem Sobre Nós">
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <p id="text-ava">Avaliações: </p> 
+<div class="container-das-avaliacoes">
+    <section id="avaliacoes">
+        <div class="avaliacao-container">
+            <div class="avaliacao-texto">
+                <div class="avaliacao-texto-left">
+                    <p>
+                        “Estou completamente encantada com o site Medfy! Desde que comecei a usar, minha vida melhorou significativamente!“
+                    </p>
+                    <div class="avaliacao-assinatura">
+                        <p>- Crewmate</p>
+                    </div>
+                </div>
+                <div class="avaliacao-texto-right">
+                    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/crewmate-indra-tirto.jpg" alt="Imagem de avaliação" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="avaliacoes-1">
+    <div class="avaliacao-container-1">
+        <div class="avaliacao-texto-1">
+            <div class="avaliacao-texto-left-1">
+                <p>
+                    “Desde que comecei a usar o serviço, não perdi nenhuma dose. Além disso, a interface é extremamente intuitiva e amigável, o que torna toda a experiência muito agradável.“
+                </p>
+                <div class="avaliacao-assinatura-1">
+                    <p>- Imposter</p>
+                </div>
+            </div>
+            <div class="avaliacao-texto-right-1">
+                <img src="https://www.pinkyprintsco.com/cdn/shop/products/among-us-cyan-imposter-512x512_512x.png?v=1618092087" alt="Imagem de avaliação" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="avaliacoes-2">
+    <div class="avaliacao-container-2">
+        <div class="avaliacao-texto-2">
+            <div class="avaliacao-texto-left-2">
+                <p>"Usar o aplicativo da Medfy transformou minha rotina de medicação. Os alarmes me ajudam a nunca esquecer os remédios, e o app é muito fácil de usar. Agora, sigo meu tratamento com tranquilidade e sem preocupações!"</p>
+                <div class="avaliacao-assinatura-2">
+                    <p>- Papai Amogus</p>
+                </div>
+            </div>
+            <div class="avaliacao-texto-right-2">
+                <img src="https://images-americanas.b2w.io/produtos/7498876071/imagens/brinquedo-de-pelucia-p-m-i-among-us-green-crewmate-com-presentes-verdes-de-30-cm/7498876071_1_large.jpg" alt="Papai Amogus">
+            </div>
+        </div>
+    </div>
+</section>
+</div>
     <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

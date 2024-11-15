@@ -210,11 +210,241 @@ header{
 }
 
 main{
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 20vh;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    gap: 40px; /* Espaço entre as seções */
+    padding: 20px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#quem-somos, #sobre-nos {
+    position: relative; /* Para permitir o efeito de fundo acinzelado */
+    background: #f8f8f8; /* Fundo claro para destacar a "placa" */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+}
+
+#quem-somos::before, #sobre-nos::before {
+    content: ''; /* Cria um pseudo-elemento para o efeito de placa */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #d4d4d4 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #d4d4d4 25%, transparent 25%) -50px 0;
+    background-size: 100px 100px;
+    border-radius: 8px;
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
+
+#texto-quem-somos, #texto-sobre-nos {
+    width: 60%;
+}
+
+#texto-quem-somos h2, #texto-sobre-nos h2 {
+    font-size: 24px;
+    color: #00385a;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#texto-quem-somos p, #texto-sobre-nos p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+#texto-quem-somos strong, #texto-sobre-nos strong {
+    color: #87CEFA;
+    font-weight: bold;
+}
+
+#imagem-quem-somos, #imagem-sobre-nos {
+    width: 35%;
+}
+
+#imagem-quem-somos img, #imagem-sobre-nos img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #texto-quem-somos, #texto-sobre-nos {
+        width: 100%;
+    }
+    #imagem-quem-somos, #imagem-sobre-nos {
+        width: 100%;
+    }
+}
+#text-ava{
+    margin-top: 5%;
+    color: #00385a; 
+    align-items: left;
+    margin-left: 8%;  
+    font-size: xx-large;
+}
+.container-das-avaliacoes{
+    margin-bottom: 50 px;
+}
+#avaliacoes {
+    margin-top: 50px;
+    padding: 20px;
+    width: 45%; /* Ajustando a largura da seção para 45% */
+    align-items: left;
+    margin-left: 8%; 
+}
+
+.avaliacao-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacao-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avaliacao-texto-left {
+    max-width: 70%;
+    color: #00385a;
+}
+
+.avaliacao-texto-left p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.avaliacao-assinatura p {
+    font-size: 16px;
+    font-style: italic;
+    color: #00385a;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.avaliacao-texto-right img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#avaliacoes-1 {
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%; /* A largura ocupa 100% do contêiner pai */
+    max-width: 45%; /* Define a largura máxima como 45% da tela */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.avaliacao-container-1 {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacao-texto-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avaliacao-texto-left-1 {
+    max-width: 70%;
+    color: #00385a;
+}
+
+.avaliacao-texto-left-1 p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.avaliacao-assinatura-1 p {
+    font-size: 16px;
+    font-style: italic;
+    color: #00385a;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.avaliacao-texto-right-1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#avaliacoes-2 {
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    max-width: 45%; /* Define a largura máxima como 45% da tela */
+    margin-left: auto; /* Alinha à direita */
+    margin-right: 8%; /* Margem de 8% à direita */
+}
+
+.avaliacao-container-2 {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacao-texto-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avaliacao-texto-left-2 {
+    max-width: 70%;
+    color: #00385a;
+}
+
+.avaliacao-texto-left-2 p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.avaliacao-assinatura-2 p {
+    font-size: 16px;
+    font-style: italic;
+    color: #00385a;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.avaliacao-texto-right-2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
 footer{
     width: 100%;
@@ -396,3 +626,15 @@ opacity: 0.8;
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha o texto e a imagem em telas menores */
+        gap: 20px; /* Espaço menor entre os elementos */
+    }
+    #texto-quem-somos, #texto-sobre-nos {
+        width: 100%; /* O texto ocupa toda a largura */
+    }
+    #imagem-quem-somos, #imagem-sobre-nos {
+        width: 100%; /* A imagem ocupa toda a largura */
+    }
+}
