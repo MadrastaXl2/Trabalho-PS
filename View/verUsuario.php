@@ -5,7 +5,7 @@ require_once '../Model/UsuarioDAO.php';
 require_once '../Model/Usuario.php';
 
 $Usuarios = new UsuarioDAOImpl();
-
+$usuario = new Usuario();
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +19,7 @@ $Usuarios = new UsuarioDAOImpl();
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Medfy</title>
+
 </head>
 <body>
     <header>
@@ -66,34 +67,36 @@ $Usuarios = new UsuarioDAOImpl();
             </div>
         </div>
     </header>
-<h1 class="text-center">Informações usuários</h1>
-<table class="table table-striped table-bordered">
-    <thead>
-        <th scope="col">Id</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Email</th>
-        <th scope="col">Senha</th>
-        <th scope="col">Idade</th>
-        <th scope="col">Sexo</th>
-        <th scope="col" class="text-center" colspan="2">Ações</th>
-    </thead>  
-    <tbody>
-        <?php          
-        foreach ($Usuarios->getUmUsuario($usuario['id']) as $usuario){
-        ?>
-            <tr>
-                <th scope="row"><?= $usuario['id'] ?></th>
-                <td><?= $usuario['nome']?></td>
-                <td><?= $usuario['email'] ?></td>
-                <td><?= $usuario['senha'] ?></td>    
-                <td><?= $usuario['idade'] ?></td>     
-                <td><?= $usuario['sexo'] ?></td>     
-                <td><a href="../PHP/phpAlterar.php?id=<?= $usuario['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $usuario['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
-            </tr>
-        <?php } ?>
-    </tbody>  
-</table>
+<main>
+    <h1 class="text-center">Informações usuários</h1>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Senha</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col" class="text-center" colspan="2">Ações</th>
+        </thead>  
+        <tbody>
+            <?php          
+            foreach ($Usuarios->getUmUsuario($usuario->Id) as $usuario){
+            ?>
+                <tr>
+                    <th scope="row"><?= $usuario['id'] ?></th>
+                    <td><?= $usuario['nome']?></td>
+                    <td><?= $usuario['email'] ?></td>
+                    <td><?= $usuario['senha'] ?></td>    
+                    <td><?= $usuario['idade'] ?></td>     
+                    <td><?= $usuario['sexo'] ?></td>     
+                    <td><a href="../PHP/phpAlterar.php?id=<?= $usuario['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
+                    <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $usuario['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
+                </tr>
+            <?php } ?>
+        </tbody>  
+    </table>
+</main>
 <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

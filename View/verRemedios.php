@@ -66,6 +66,7 @@ $Remedios = new RemediosDAOImpl();
             </div>
         </div>
     </header>
+<main>
 <h1 class="text-center">Cadastro de Remédios</h1>
 <table class="table table-striped table-bordered">
     <thead>
@@ -90,7 +91,7 @@ $Remedios = new RemediosDAOImpl();
         <?php } ?>
     </tbody>  
 </table>
-
+</main>
 <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

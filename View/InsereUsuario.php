@@ -62,7 +62,7 @@ include "../Model/ManagerUsuario.class.php";
             </div>
         </div>
     </header>
-
+<main>
     <div id="divGeral">
         <h1 class="text-center">Cadastro Usuario</h1>
         <form method="POST" action="../Controller/Usuario/insert_usuario.php"> 
@@ -101,6 +101,7 @@ include "../Model/ManagerUsuario.class.php";
             </div>
         </form>
     </div>
+</main>
     <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

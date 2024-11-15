@@ -56,12 +56,12 @@
             </div>
         </div>
     </header>
-
+</main>
 
     <!--<main> </main> -->
 
 
-
+<main>
     <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

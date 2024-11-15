@@ -56,7 +56,7 @@
             </div>
         </div>
     </header>
-
+<main>
     <div id="divGeral">
         <h1 class="text-center">Cadastro De Remedios</h1>
         <form method="POST" action="../Controller/Remedio/insert_remedio.php">
@@ -80,7 +80,7 @@
         <a href="verRemedios.php" class="btn btn-success">Ver meus remédios</a> 
     </div>
 </form>
-
+</main>
 <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

@@ -56,6 +56,7 @@
             </div>
         </div>
     </header>
+<main>
     <form id="form" method="post" action="../PHP/envia.php">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" name="nome" placeholder="Nome">
@@ -75,6 +76,7 @@
         </div>
         <button type="submit">Enviar</button>
     </form>
+</main>
     <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">

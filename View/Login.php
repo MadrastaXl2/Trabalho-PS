@@ -58,8 +58,10 @@
     </header>
 
 
-
-    <!-- main -->$_COOKIE
+<main>
+    
+</main>
+    <!-- main -->
 
 
     <footer>

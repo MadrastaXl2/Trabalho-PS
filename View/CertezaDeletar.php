@@ -62,7 +62,7 @@ include "../Model/ManagerUsuario.class.php";
             </div>
         </div>
     </header>
-
+<main>
     <!-- FInal da logo-->
     <div id="divGeral">
         <h1 class="text-center">Você tem certeza que deseja deletar o seginte remedio :</h1>
@@ -80,6 +80,7 @@ include "../Model/ManagerUsuario.class.php";
     </div>
 </form>
     </div>
+</main>
 <!-- Começo rodape -->
 <footer>
         <div id="conteudo_footer">
