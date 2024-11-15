@@ -61,10 +61,11 @@ class RemediosDAOImpl implements RemedioDao {
     public function updateRemedio($remedio) {
         try {
             $pdo = $this->conexao;
-            $sql = "UPDATE remedio SET nome= :nome, horario= :horario,data= :data WHERE id=?";
+            $sql = "UPDATE remedio SET nome= :nome, horario= :horario,data= :data WHERE id= :id";
             $statement = $pdo->prepare($sql);
 
-            $statement->bindValue(":nome", $remedio->nome);
+            $statement->bindValue(":id", $remedio->Id);
+            $statement->bindValue(":nome", $remedio->Nome);
             $statement->bindValue(":horario", $remedio->Horario);
             $statement->bindValue(":data", $remedio->Data);
 

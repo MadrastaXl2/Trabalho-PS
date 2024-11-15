@@ -3,6 +3,7 @@
 require_once ('../../Model/ManagerRemedio.class.php');
 require_once ('../../Model/Conexao.class.php');
 
+
 if(isset($_POST['submit'])){
     $controller = new UpdateRemedioController();
     $controller->updateRemedio($_POST);
@@ -17,7 +18,9 @@ class UpdateRemedioController{
     
     public function updateRemedio($dados){
 
+        echo "Alterado";
        $remedio = new Remedio();
+       $remedio->Id = $dados['id'] ?? '';
        $remedio->Nome = $dados['nome'] ?? '';
        $remedio->Horario = $dados['horario'] ?? '';
        $remedio->Data = $dados['data'] ?? '';
