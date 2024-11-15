@@ -19,7 +19,7 @@ class UpdateRemedioController{
 
        $this->remedioDAO->updateRemedio($remedio);
 
-       header("Location: .../view/AlteraRemedio.php?cod=1");
+       header("Location: .../view/updateRemedio.php?cod=1");
        exit();
 
     }
