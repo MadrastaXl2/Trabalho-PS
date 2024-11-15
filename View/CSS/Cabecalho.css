@@ -213,10 +213,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 20vh;
+    min-height: 80vh;
     flex-direction: column; /* Alinha os elementos verticalmente */
     gap: 40px; /* Espaço entre as seções */
-    padding: 20px;
 }
 
 .container {
