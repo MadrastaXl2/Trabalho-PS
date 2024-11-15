@@ -26,7 +26,7 @@ $dados = $remedios->getUmRemedio($_GET['id']);
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input type="text" class="form-control" name="name" id="inputNome" value="<?php echo $dados[0]['nome']?>">
+    <input type="text" class="form-control" name="nome" id="inputNome" value="<?php echo $dados[0]['nome']?>">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Horario</label>
@@ -37,7 +37,7 @@ $dados = $remedios->getUmRemedio($_GET['id']);
     <input type="date" class="form-control" name="data" id="inputHorario" value="<?php echo $dados[0]['data']?>">
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </form>
 </body>
 </html>
