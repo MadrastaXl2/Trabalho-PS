@@ -107,6 +107,22 @@ class UsuarioDAOImpl implements UsuarioDAO {
         
     }
 
+     public function ValidaLogin($Usuario)
+    {
+        try{
+            $pdo = $this->conexao->get_instance();
+            $sql = "SELECT * FROM usuario WHERE email = :email AND senha = :senha";
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(":email", $Usuario->email);
+            $statement->bindValue(":senha", sha1($Usuario->senha));
+            
+        }
+        catch (PDOException $e) {
+            echo "Erro ao Logar : " . $e->getMessage();
+        }
     }
+
+    }
+
     
 ?>
