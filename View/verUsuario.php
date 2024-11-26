@@ -91,7 +91,7 @@ $usuario = new Usuario();
                     <td><?= $usuario['idade'] ?></td>     
                     <td><?= $usuario['sexo'] ?></td>     
                     <td><a href="../PHP/phpAlterar.php?id=<?= $usuario['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                    <td><a href="../PHP/PhpDeleteRemedios.php?id=<?= $usuario['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
+                             
                 </tr>
             <?php } ?>
         </tbody>  
