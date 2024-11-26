@@ -24,7 +24,7 @@ include '../Model/Conexao.class.php'
         </div>
         <div id="menu">
             <div id="container">
-                <h1>MedFy</h1>
+            <img id="logo" id="darkModeToggle" src="IMGS/Logo Branca.png" alt="logo" width="4.5%">
                 <ul id="itensMenu">
                 <li>
                     <a href="../index.php">Home</a>

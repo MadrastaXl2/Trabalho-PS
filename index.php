@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Pezxinho</title>
+    
 </head>
 <body>
     <header>
@@ -20,7 +20,9 @@
         </div>
         <div id="menu">
             <div id="container">
-                <h1>MedFy</h1>
+
+                    <img id="logo" id="darkModeToggle" src="View/IMGS/Logo Branca.png" alt="logo" width="4.5%">
+
                 <ul id="itensMenu">
                 <li>
                     <a href="../index.php">Home</a>
@@ -244,5 +246,7 @@
             &#169 2024 all rights reserved MedFy
         </div>
     </footer>
+
+    
 </body>
 </html>
