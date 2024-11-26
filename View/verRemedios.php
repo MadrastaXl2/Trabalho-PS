@@ -77,6 +77,7 @@ $Remedios = new RemediosDAOImpl();
         <th scope="col" class="text-center" colspan="2">Ações</th>
     </thead>  
     <tbody>
+        <form action="../Controller/Remedio/dele">
         <?php          
         foreach ($Remedios->getTodosRemedios() as $remedio){
         ?>
@@ -86,9 +87,10 @@ $Remedios = new RemediosDAOImpl();
                 <td><?= $remedio['horario'] ?></td>
                 <td><?= $remedio['data'] ?></td>     
                 <td><a href="updateRemedio.php?id=<?= $remedio['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="CertezaDeletar.php?id=<?= $remedio['id']?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>          
+                <td><input type="submit" name = "submit" class = "btn btn-danger"><i class="bi bi-trash"></i></td>         
             </tr>
         <?php } ?>
+        </form>
     </tbody>  
 </table>
 </main>
