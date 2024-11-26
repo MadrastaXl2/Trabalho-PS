@@ -61,10 +61,7 @@
 
 
 <main>
-    
-</main>
-    <!-- main -->
-    <div id="divPrincipal">
+<div id="divPrincipal">
         <div class="login-container">
             <h2>Login</h2>
             <form action="../Controller/Usuario/Login_Usuario.php" method="POST">
@@ -76,10 +73,12 @@
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha" required>
                 </div>
-                <button type="submit" class="btn-login">Entrar</button>
+                <button type="submit" name="submit" class="btn-login">Entrar</button>
             </form>
         </div>
     </div>
+</main>
+    <!-- main -->
 
     <footer>
         <div id="conteudo_footer">

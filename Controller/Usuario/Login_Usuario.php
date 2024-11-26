@@ -24,7 +24,7 @@ class ValidaLoginController{
 
         $this->UsuarioDAO->ValidaLogin($usuario);
 
-        header("Location: ../../View/Login.php?cod=1");
+        header("Location: ../../index.php?cod=1");
     }
 }
 ?>
