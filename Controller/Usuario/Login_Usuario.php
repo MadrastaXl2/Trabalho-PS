@@ -4,7 +4,7 @@ require_once ('../../Model/MenagerUsuario.class.php');
 require_once ('../../Model/Conexao.class.php'); 
 
 if(isset($_POST['submit'])){
-    $controller = new UpdateSenhaController();
+    $controller = new ValidaLoginController();
     $controller->ValidaLogin($_POST);
 }
 
