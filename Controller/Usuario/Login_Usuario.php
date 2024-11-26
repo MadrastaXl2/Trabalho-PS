@@ -1,6 +1,6 @@
 <?php
 
-require_once ('../../Model/MenagerUsuario.class.php');
+require_once ('../../Model/ManagerUsuario.class.php');
 require_once ('../../Model/Conexao.class.php'); 
 
 if(isset($_POST['submit'])){

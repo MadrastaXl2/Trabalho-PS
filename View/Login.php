@@ -65,10 +65,9 @@
 </main>
     <!-- main -->
     <div id="divPrincipal">
-    <form action="">
         <div class="login-container">
             <h2>Login</h2>
-            <form action="processa_login.php" method="post">
+            <form action="../Controller/Usuario/Login_Usuario.php" method="POST">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
@@ -80,7 +79,6 @@
                 <button type="submit" class="btn-login">Entrar</button>
             </form>
         </div>
-    </form>
     </div>
 
     <footer>
