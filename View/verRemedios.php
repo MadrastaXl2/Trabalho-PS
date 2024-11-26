@@ -76,21 +76,19 @@ $Remedios = new RemediosDAOImpl();
         <th scope="col">Data</th>
         <th scope="col" class="text-center" colspan="2">Ações</th>
     </thead>  
-    <tbody>
-        <form action="../Controller/Remedio/delete_remedio.php">
+    <tbody>       
         <?php          
         foreach ($Remedios->getTodosRemedios() as $remedio){
         ?>
             <tr>
-                <th scope="row"><input type="text" value="<?= $remedio['id'] ?>" readonly></th>
-                <td><input type="text" value="<?= $remedio['nome']?>" readonly></td>
-                <td><input type="text" value="<?= $remedio['horario'] ?>" readonly></td>
-                <td><input type="text" value="<?= $remedio['data'] ?>" readonly></td>     
+                <th scope="row"><?= $remedio['id'] ?></th>
+                <td><?= $remedio['nome']?></td>
+                <td><?= $remedio['horario'] ?></td>
+                <td><?= $remedio['data'] ?></td>     
                 <td><a href="updateRemedio.php?id=<?= $remedio['id'] ?>" class="btn btn-warning padding"><i class="bi bi-pencil-square"></i></a></td>
-                <td><input type="submit" name = "submit" class = "btn btn-danger" value="Deletar"><i class="bi bi-trash"></i></td>         
+                <td><a href="CertezaDeletar.php?id<?= $remedio['id'] ?>" class = "btn btn-danger"><i class="bi bi-trash"></i></a></td>         
             </tr>
         <?php } ?>
-        </form>
     </tbody>  
 </table>
 </main>
