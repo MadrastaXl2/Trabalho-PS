@@ -115,7 +115,7 @@ class UsuarioDAOImpl implements UsuarioDAO {
             $statement = $pdo->prepare($sql);
             $statement->bindValue(":email", $Usuario->email);
             $statement->bindValue(":senha", sha1($Usuario->senha));
-            
+            // sha1 é para deixar a senha "segura".
         }
         catch (PDOException $e) {
             echo "Erro ao Logar : " . $e->getMessage();
