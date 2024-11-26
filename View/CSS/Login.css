@@ -2,6 +2,71 @@ body{
     text-decoration: none;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0vh;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    gap: 40px; /* Espaço entre as seções */
+}
+
+#divPrincipal{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.login-container {
+    background-color: #87cefa;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+.login-container h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #87cefa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-login:hover {
+    background-color: #f0f0f0;
+}
+
 #DivGeral{
     margin: 40px;
 }

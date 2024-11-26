@@ -9,6 +9,8 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Medfy</title>
+    <link rel="stylesheet" href="CSS/Login.css">
+
 </head>
 <body>
     <header>
@@ -62,7 +64,24 @@
     
 </main>
     <!-- main -->
-
+    <div id="divPrincipal">
+    <form action="">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="processa_login.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+        </div>
+    </form>
+    </div>
 
     <footer>
         <div id="conteudo_footer">
