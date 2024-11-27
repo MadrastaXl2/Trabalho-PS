@@ -132,10 +132,10 @@ header{
     border-radius: 50px;
     height: 60px;
     width: 60px;
-    gap: 0;
     margin-right: 20px;
     align-items: center;
     justify-content: center;
+    display: flex;
     color: #87CEFA;
 }
 #ParteFinalCabecalho a{
@@ -216,6 +216,7 @@ main{
     min-height: 80vh;
     flex-direction: column; /* Alinha os elementos verticalmente */
     gap: 40px; /* Espaço entre as seções */
+    padding: 20px;
 }
 
 .container {
@@ -638,3 +639,102 @@ opacity: 0.8;
     }
 }
 
+/*dark mode*/
+body.dark-mode {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+body.dark-mode header {
+    background-color: #000e17; 
+
+}
+body.dark-mode #menu {
+    background-color: #00385a;
+}
+body.dark-mode.menu {
+    background-color: #00385a;
+}
+body.dark-mode #conteudo_footer {
+    background-color: #00385a;
+}
+body.dark-mode .avaliacao-container{
+    background-color: #00385a;
+}
+body.dark-mode .avaliacao-texto-left{
+    color: #87CEFA;
+}
+body.dark-mode .pp{
+    color: #87CEFA;
+}
+body.dark-mode .avaliacao-container-1{
+    background-color: #00385a;
+}
+body.dark-mode .avaliacao-texto-left-1{
+    color: #87CEFA;
+}
+body.dark-mode .avaliacao-container-2{
+    background-color: #00385a;
+}
+body.dark-mode .avaliacao-texto-left-2{
+    color: #87CEFA;
+}
+body.dark-mode .footer-link{
+    color: #87CEFA;
+}
+body.dark-mode #footer_copyright{
+    background-color: #000e17;
+}
+body.dark-mode #footer_subscribe p{
+    color: #87CEFA;
+}
+body.dark-mode .container{
+    background-color: #00385a;
+}
+body.dark-mode #quem-somos{
+    background-color: #00385a;
+}
+body.dark-mode #sobre-nos{
+    background-color: #00385a;
+}
+body.dark-mode #texto-quem-somos h2{
+    color: #87CEFA;
+}
+body.dark-mode #texto-sobre-nos h2{
+    color: #87CEFA;
+}
+body.dark-mode #texto-quem-somos p{
+    color: #fafafa;
+}
+body.dark-mode #texto-sobre-nos p{
+    color: #fafafa;
+}
+body.dark-mode #text-ava{
+    color: #87CEFA;
+}
+body.dark-mode .carousel-button{
+    background-color: #00385a;
+}
+body.dark-mode #input_group button{
+    background-color: #000e17;
+}
+/* Estilo do botão no modo noturno */
+#darkModeToggle {
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #1e90ff; /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#darkModeToggle:hover {
+    background-color: #4682b4; /* Azul mais escuro */
+}
+
+/* Estilo do botão em modo noturno */
+body.dark-mode #darkModeToggle {
+    background-color: #ffffff; /* Botão branco */
+    color: #121212; /* Texto escuro */
+}

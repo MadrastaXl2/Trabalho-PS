@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     
 </head>
 <body>
+<script src="View/JS/main.js"></script>
     <header>
             <div id="contato">
             <div id="contatoItens">
@@ -35,7 +36,7 @@
                     <a href="../Trabalho-PS/View/Mapa.php">Mapa</a>
                 </li>
                 <li>
-                    <a href="../Trabalho-PS/view/Pag_Agua_HTML.php">Agua</a>
+                    <a href="../Trabalho-PS/View/Pag_Agua_HTML.php">Agua</a>
                 </li>
                 <li>
                     <a href="calculaCal.php">Calculadora de calorias</a>
@@ -52,6 +53,7 @@
                                 <li><a class="dropdown-item" href="../Trabalho-PS/View/faleConosco.php">Fale Conosco</a></li>
                                 <li><a class="dropdown-item" href="../Trabalho-PS/View/verUsuario.php">Informações do usuario</a></li>
                                 <li><a class="dropdown-item" href="../Trabalho-PS/View/AlteraSenha.php">Alterar a Senha</a></li>
+                                <li><a class="dropdown-item"> <button id="darkModeToggle">Toggle Dark Mode</button></a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +97,7 @@
                     </p>
                 </div>
                 <div id="imagem-quem-somos">
-                    <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagem Quem Somos">
+                    <img src="https://psicologiario.com.br/wp-content/uploads/2017/01/9.jpg" alt="Imagem Quem Somos">
                 </div>
             </div>
         </section>
@@ -112,7 +114,7 @@
                     </p>
                 </div>
                 <div id="imagem-sobre-nos">
-                    <img src="https://images.pexels.com/photos/576831/pexels-photo-576831.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Imagem Sobre Nós">
+                    <img src="https://conteudo.imguol.com.br/c/entretenimento/e4/2020/12/29/antibiotico-medicamento-remedios-capsulas-1609275407758_v2_3x4.jpg" alt="Imagem Sobre Nós">
                 </div>
             </div>
         </section>
@@ -128,7 +130,7 @@
                         “Estou completamente encantada com o site Medfy! Desde que comecei a usar, minha vida melhorou significativamente!“
                     </p>
                     <div class="avaliacao-assinatura">
-                        <p>- George Lavarini</p>
+                        <p class="pp">- George Lavarini</p>
                     </div>
                 </div>
                 <div class="avaliacao-texto-right">
@@ -147,7 +149,7 @@
                     “Desde que comecei a usar o serviço, não perdi nenhuma dose. Além disso, a interface é extremamente intuitiva e amigável, o que torna toda a experiência muito agradável.“
                 </p>
                 <div class="avaliacao-assinatura-1">
-                    <p>- Cleber dos Santos</p>
+                    <p class="pp">- Cleber dos Santos</p>
                 </div>
             </div>
             <div class="avaliacao-texto-right-1">
@@ -163,7 +165,7 @@
             <div class="avaliacao-texto-left-2">
                 <p>"Usar o aplicativo da Medfy transformou minha rotina de medicação. Os alarmes me ajudam a nunca esquecer os remédios, e o app é muito fácil de usar. Agora, sigo meu tratamento com tranquilidade e sem preocupações!"</p>
                 <div class="avaliacao-assinatura-2">
-                    <p>- Duda Rubert</p>
+                    <p class="pp">- Duda Rubert</p>
                 </div>
             </div>
             <div class="avaliacao-texto-right-2">
