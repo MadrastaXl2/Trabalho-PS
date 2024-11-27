@@ -13,7 +13,7 @@
         .container {
             margin-top: 5vh;
             margin-bottom: 5vh;
-            background-color: white;
+            background-color: #87CEFA;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -23,22 +23,23 @@
         }
         h2 {
             text-align: center;
-            color: #7AB8E5;
+            color: white;
             margin-bottom: 20px;
         }
         label {
             display: block;
             margin-bottom: 10px;
-            color: #333;
+            color: white;
         }
-        input {
+        .inputForm {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        button {
+
+        #darkModeToggle {
             width: 100%;
             padding: 10px;
             background-color: #7AB8E5;
@@ -48,7 +49,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        button:hover {
+        #darkModeToggle:hover {
             background-color: #5A9AD3;
         }
     </style>
@@ -104,16 +105,16 @@
             </div>
         </div>
     </header>
-
+<main>
     <div class="container">
         <h2>Consumo Diário de Água</h2>
         <form action = "../Model/Agua.php" method="POST">
             <label for="water-intake">Quantidade de Água (L):</label>
-            <input  type="text"  id="water-intake"  name="agua" placeholder="Digite quantidade em L" >
-            <input type="submit" value = "Calcular">
+            <input  type="text" class="inputForm" id="water-intake"  name="agua" placeholder="Digite quantidade em L" >
+            <input type="submit" class="inputForm" value = "Calcular">
         </form>
     </div>
-
+</main>
     
     <footer>
         <div id="conteudo_footer">
