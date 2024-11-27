@@ -35,7 +35,7 @@
                     <a href="../Trabalho-PS/View/Mapa.php">Mapa</a>
                 </li>
                 <li>
-                    <a href="../Trabalho-PS/View/Agua.php">Agua</a>
+                    <a href="../Trabalho-PS/view/Pag_Agua_HTML.php">Agua</a>
                 </li>
                 <li>
                     <a href="calculaCal.php">Calculadora de calorias</a>

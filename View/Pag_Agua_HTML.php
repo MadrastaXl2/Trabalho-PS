@@ -70,14 +70,14 @@
                     <a href="">Home</a>
                 </li>
                 <li>
-                        <a href="../Trabalho-PS/View/verRemedios.php">Ver Remedios</a>
+                        <a href="verRemedios.php">Ver Remedios</a>
                 </li>
              
                 <li>
-                    <a href="../Trabalho-PS/View/Mapa.php">Mapa</a>
+                    <a href="Mapa.php">Mapa</a>
                 </li>
                 <li>
-                    <a href="../Trabalho-PS/View/Agua.php">Agua</a>
+                    <a href="Pag_Agua_HTML.php">Agua</a>
                 </li>
                 <li>
                     <a href="calculaCal.php">Calculadora de calorias</a>

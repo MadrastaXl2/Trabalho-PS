@@ -43,7 +43,7 @@ $Remedios = new RemediosDAOImpl();
                     <a href="Mapa.php">Mapa</a>
                 </li>
                 <li>
-                    <a href="Agua.php">Agua</a>
+                    <a href="Pag_Agua_HTML.php">Agua</a>
                 </li>
                 <li>
                     <a href="calculaCal.php">Calculadora de calorias</a>
