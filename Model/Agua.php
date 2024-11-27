@@ -49,11 +49,11 @@
                             <!-- Corrigido o botão do dropdown -->
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../Trabalho-PS/View/Login.php">Login</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereUsuario.php">Cadastro de usuário</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereRemedio.php">Cadastro de Remédio</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/faleConosco.php">Fale Conosco</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/verUsuario.php">Informações do usuario</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/AlteraSenha.php">Alterar a Senha</a></li>
+                                <li><a class="dropdown-item" href="../View/InsereUsuario.php">Cadastro de usuário</a></li>
+                                <li><a class="dropdown-item" href="../View/InsereRemedio.php">Cadastro de Remédio</a></li>
+                                <li><a class="dropdown-item" href="../View/faleConosco.php">Fale Conosco</a></li>
+                                <li><a class="dropdown-item" href="../View/verUsuario.php">Informações do usuario</a></li>
+                                <li><a class="dropdown-item" href="../View/AlteraSenha.php">Alterar a Senha</a></li>
                             </ul>
                         </div>
                     </div>
