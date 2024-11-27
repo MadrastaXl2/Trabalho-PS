@@ -25,7 +25,7 @@
 
                 <ul id="itensMenu">
                 <li>
-                    <a href="../index.php">Home</a>
+                    <a href="">Home</a>
                 </li>
                 <li>
                         <a href="../Trabalho-PS/View/verRemedios.php">Ver Remedios</a>

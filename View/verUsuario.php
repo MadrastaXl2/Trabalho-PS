@@ -60,7 +60,6 @@ $usuario = new Usuario();
                                 <li><a class="dropdown-item" href="InsereRemedio.php">Cadastro de Remédio</a></li>
                                 <li><a class="dropdown-item" href="faleConosco.php">Fale Conosco</a></li>
                                 <li><a class="dropdown-item" href="VerUsuario.php">Informações do usuario</a></li>
-                                <li><a class="dropdown-item" href="AlteraSenha.php">Alterar a Senha</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,7 +67,7 @@ $usuario = new Usuario();
         </div>
     </header>
 <main>
-    <h1 class="text-center">Informações usuários</h1>
+    <h1 class="text-center">Informação do usuário</h1>
     <table class="table table-striped table-bordered">
         <thead>
             <th scope="col">Id</th>
@@ -81,7 +80,8 @@ $usuario = new Usuario();
         </thead>  
         <tbody>
             <?php          
-            foreach ($Usuarios->getUmUsuario($usuario->Id) as $usuario){
+            $usuario = $Usuarios->getUmUsuario($usuario->Id);
+            if ($usuario) {
             ?>
                 <tr>
                     <th scope="row"><?= $usuario['id'] ?></th>

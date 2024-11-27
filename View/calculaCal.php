@@ -53,7 +53,6 @@ include '../Model/Conexao.class.php'
                                 <li><a class="dropdown-item" href="InsereRemedio.php">Cadastro de Remédio</a></li>
                                 <li><a class="dropdown-item" href="faleConosco.php">Fale Conosco</a></li>
                                 <li><a class="dropdown-item" href="VerUsuario.php">Informações do usuario</a></li>
-                                <li><a class="dropdown-item" href="AlteraSenha.php">Alterar a Senha</a></li>
                             </ul>
                         </div>
                     </div>
