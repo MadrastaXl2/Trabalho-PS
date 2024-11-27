@@ -14,6 +14,7 @@
 
 </head>
 <body>
+<script src="View/JS/main.js"></script>
     <header>
             <div id="contato">
             <div id="contatoItens">
@@ -52,6 +53,7 @@
                                 <li><a class="dropdown-item" href="InsereRemedio.php">Cadastro de Remédio</a></li>
                                 <li><a class="dropdown-item" href="faleConosco.php">Fale Conosco</a></li>
                                 <li><a class="dropdown-item" href="VerUsuario.php">Informações do usuario</a></li>
+                                <li><a class="dropdown-item"> <button id="darkModeToggle">Toggle Dark Mode</button></a></li>
                             </ul>
                         </div>
                     </div>

@@ -11,6 +11,7 @@
     <title>MedFy</title>
 </head>
 <body>
+<script src="View/JS/main.js"></script>
 <header id="cabecalho">
         <div id="imgLogo"> <!--Div da logo-->
             <img src="../IMGS/Logo.png" width="15%" alt="logo">
