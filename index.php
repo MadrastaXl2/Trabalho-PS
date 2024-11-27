@@ -52,8 +52,7 @@
                                 <li><a class="dropdown-item" href="../Trabalho-PS/View/InsereRemedio.php">Cadastro de Remédio</a></li>
                                 <li><a class="dropdown-item" href="../Trabalho-PS/View/faleConosco.php">Fale Conosco</a></li>
                                 <li><a class="dropdown-item" href="../Trabalho-PS/View/verUsuario.php">Informações do usuario</a></li>
-                                <li><a class="dropdown-item" href="../Trabalho-PS/View/AlteraSenha.php">Alterar a Senha</a></li>
-                                <li><a class="dropdown-item"> <button id="darkModeToggle">Toggle Dark Mode</button></a></li>
+                                <li><a class="dropdown-item"> <button id="darkModeToggle">Modo escuro</button></a></li>
                             </ul>
                         </div>
                     </div>
