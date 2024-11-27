@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/Login.css">
     <link rel="stylesheet" href="CSS/Cabecalho.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Medfy</title>
-    <link rel="stylesheet" href="CSS/Login.css">
+
 
 </head>
 <body>
@@ -58,10 +59,8 @@
             </div>
         </div>
     </header>
-
-
 <main>
-<div id="divPrincipal">
+    <div id="divPrincipal">
         <div class="login-container">
             <h2>Login</h2>
             <form action="../Controller/Usuario/Login_Usuario.php" method="POST">
@@ -77,6 +76,7 @@
             </form>
         </div>
     </div>
+
 </main>
     <!-- main -->
 

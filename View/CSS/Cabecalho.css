@@ -132,10 +132,10 @@ header{
     border-radius: 50px;
     height: 60px;
     width: 60px;
+    gap: 0;
     margin-right: 20px;
     align-items: center;
     justify-content: center;
-    display: flex;
     color: #87CEFA;
 }
 #ParteFinalCabecalho a{
@@ -637,3 +637,4 @@ opacity: 0.8;
         width: 100%; /* A imagem ocupa toda a largura */
     }
 }
+

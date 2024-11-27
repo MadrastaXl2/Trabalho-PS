@@ -42,7 +42,7 @@
                 </li>
                 </ul>
                 <div id="ParteFinalCabecalho">
-                    <img src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec=w240-h480-rw" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
+                    <img src="View/IMGS/Usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" width="50%" alt="Usuário">
                         <div class="dropdown">
                             <!-- Corrigido o botão do dropdown -->
                             <ul class="dropdown-menu">
