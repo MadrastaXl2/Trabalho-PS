@@ -11,6 +11,12 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>MedFy</title>
+    <style>
+        #bntVoltar a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -60,8 +66,9 @@
             </div>
         </div>
     </header>
-
+    <main>
 <?php
+
 class Agua{
 
     function BebeAgua($Litros){
@@ -110,8 +117,8 @@ echo $teste->BebeAgua($BAH);
 
 
 ?> <br>
-<button type="button" class="btn btn-primary"> <a href="../View/Pag_Agua_HTML.php">Voltar</a></button>
-
+<button type="button" id="bntVoltar" class="btn btn-primary"> <a href="../View/Pag_Agua_HTML.php">Voltar</a></button>
+    </main>
 <footer>
         <div id="conteudo_footer">
             <div id="contatos_footer">
